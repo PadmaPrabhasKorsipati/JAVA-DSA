@@ -12,7 +12,7 @@ public class sum {
         c=sc.nextInt();
 
         if(a>b && a>c){
-            System.out.println("The largest number is: "+a );
+            System.out.println("The Largest number is: "+a );
 
         }
         else if(b>a && b>c){
@@ -22,7 +22,7 @@ public class sum {
         }
 
         else{
-            System.out.println("The largest number is: "+c);
+            System.out.println("The Largest number is: "+c);
         }
 
         sc.close();

@@ -17,7 +17,7 @@ public class sum {
         }
         else if(b>a && b>c){
 
-            System.out.println("The largest number is: "+b);
+            System.out.println("The Largest number is: "+b);
 
         }
 

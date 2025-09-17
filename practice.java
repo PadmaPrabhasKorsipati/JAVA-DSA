@@ -1,6 +1,7 @@
-
+/* 
 
 import java.util.Scanner;
+
 
 //swap numbers
 public class practice {
@@ -24,8 +25,32 @@ public class practice {
 
      }
 
+}
     
+*/
+
+import java.util.Scanner;
+
+public class practice {
+
+    public static void main(String[] args) {
+        
+
+        Scanner sc=new Scanner(System.in);
+
+        System.out.println("E");
+        int N=sc.nextInt();
+
+    }
+}
+
+
 
     
     
-}
+
+
+
+
+
+

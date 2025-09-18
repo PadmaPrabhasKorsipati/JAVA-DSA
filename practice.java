@@ -63,6 +63,9 @@ public class practice {
 
 */
 
+/* 
+//Sum of first N Natural numbers
+
 import java.util.Scanner;
 
 public class practice {
@@ -83,12 +86,33 @@ public class practice {
 
     }
 }
+*/
 
-    
-    
+import java.util.Scanner;
 
+public class practice {
 
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter the number:");
+        int num=sc.nextInt();
+        int rev;
+        int org=num;
 
+        rev=0;
+        while(num!=0){
+            int digit=num%10;
+            rev=rev*10+digit;
+            num=num/10;
+
+        }
+        System.out.println("Original:"+org);
+        System.out.println("Reversed:"+rev);
+
+        sc.close();
+
+    }
+}
 
 
 

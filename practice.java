@@ -38,8 +38,20 @@ public class practice {
 
         Scanner sc=new Scanner(System.in);
 
-        System.out.println("E");
+        System.out.println("Enter the valuse of N");
+        int fact=1;
         int N=sc.nextInt();
+
+        for(int i=1;i<=N;i++){
+            fact*=i;
+
+        }
+
+        System.out.println("Factorial of "+N+"="+fact);
+
+        sc.close();
+
+
 
     }
 }

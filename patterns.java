@@ -1,3 +1,4 @@
+//inverted star pattern
 /* 
 import java.util.Scanner;
 
@@ -23,6 +24,9 @@ public class patterns {
 }
 */
 
+
+//Half pyramid pattern
+/*
 import java.util.Scanner;
 
 public class patterns {
@@ -44,3 +48,7 @@ public class patterns {
 
     }
 }
+ */
+
+
+ 

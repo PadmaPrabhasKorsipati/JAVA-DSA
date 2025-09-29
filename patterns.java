@@ -144,7 +144,7 @@ public class patterns {
 
 
 
-
+/* 
 
 //Number increasing pyramid pattern
 
@@ -166,3 +166,6 @@ public class patterns {
         System.out.println();
     }
 }
+    
+*/
+

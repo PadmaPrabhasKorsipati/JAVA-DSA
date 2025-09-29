@@ -29,7 +29,7 @@ public class array {
 
 
 //Linear Search 
-
+/* 
 import java.util.Scanner;
 
 public class array {
@@ -74,3 +74,34 @@ public class array {
     }
 }
 
+*/
+
+//Largest element in array
+
+import java.util.Scanner;
+
+public class array {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+
+        System.out.print("Enter no of Elements:");
+        int n=sc.nextInt();
+        int[] arr=new int[n];
+        int large=arr[0];
+        for(int i=0;i<n;i++){
+            arr[i]=sc.nextInt();
+            
+        }
+
+        for(int j=0;j<n;j++){
+            if(arr[j]>large){
+                large=arr[j];
+            }
+        }
+
+        System.out.println("The Largest Element in the array:"+large);
+
+        sc.close();
+    }
+}

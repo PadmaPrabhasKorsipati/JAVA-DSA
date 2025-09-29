@@ -169,6 +169,8 @@ public class patterns {
 
 */
 
+
+/* 
 // reverse incresing pyramid  program
 
 import java.util.Scanner;
@@ -191,5 +193,31 @@ public class patterns {
     }
 }
 
+*/ 
 
 
+
+
+//number changing pattern
+
+import java.util.Scanner;
+
+public class patterns {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter no.of rows:");
+        int n=sc.nextInt();
+        int sum=0;
+        for(int i=1;i<=n;i++){
+            for(int j=1;j<=i;j++){
+                sum+=1;
+                System.out.print(sum+" ");
+            }
+            System.out.println();
+        }
+
+        sc.close();
+        
+    }
+}

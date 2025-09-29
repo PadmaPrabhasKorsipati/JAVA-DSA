@@ -222,7 +222,7 @@ public class patterns {
     }
 }
 */
-
+/* 
 //binary triangle 
 
 import java.util.Scanner;
@@ -249,4 +249,42 @@ public class patterns {
         sc.close();
 
     }
+}
+*/
+
+
+//palindrome Triangle
+
+import java.util.Scanner;
+
+public class patterns {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter no.of rows:");
+        int n=sc.nextInt();
+         for (int i = 1; i <= n; i++) {
+            
+            // inner loop to print the spaces
+            for (int j = 1; j <= 2 * (n - i); j++) {
+                System.out.print(" ");
+            }
+
+            // inner loop to print the first part
+            for (int j = i; j >= 1; j--) {
+                System.out.print(j + " ");
+            }
+
+            // inner loop to print the second part
+            for (int j = 2; j <= i; j++) {
+                System.out.print(j + " ");
+            }
+
+            // printing new line for each row
+            System.out.println();
+        }
+        sc.close();
+    
+}
+
 }

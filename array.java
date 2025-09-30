@@ -183,7 +183,9 @@ public class array {
 
 */
 
+/* 
 //Reverse  an array 
+
 
 import java.util.Scanner;
 
@@ -206,3 +208,10 @@ public class array {
 
     }
 }
+
+*/
+
+
+
+
+

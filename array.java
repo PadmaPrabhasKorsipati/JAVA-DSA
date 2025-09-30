@@ -76,6 +76,7 @@ public class array {
 
 */
 
+/* 
 //Largest element in array
 
 import java.util.Scanner;
@@ -103,5 +104,65 @@ public class array {
         System.out.println("The Largest Element in the array:"+large);
 
         sc.close();
+    }
+}
+
+*/
+
+
+//Binary Search
+
+import java.util.Scanner;
+
+public class array {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+
+        System.out.print("Enter no of Elements:");
+        int n=sc.nextInt();
+        int[] arr=new int[n];
+        int sort;
+
+        for(int i=0;i<n;i++){
+            arr[i]=sc.nextInt();
+            
+        }
+
+        for(int j=0;j<n-1;j++){
+            if(arr[j]>arr[j+1]){
+                sort=arr[j+1];
+                arr[j+1]=arr[j];
+                arr[j]=sort;
+
+
+            }
+
+
+             }
+
+
+             for(int k=0;k<n;k++){
+                System.out.print(arr[k]+" ");
+            
+            
+        }
+
+
+
+       
+        
+
+ sc.close();
+
+
+
+
+
+
+
+
+
+
     }
 }

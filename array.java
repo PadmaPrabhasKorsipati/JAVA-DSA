@@ -109,6 +109,7 @@ public class array {
 
 */
 
+/* 
 
 //Binary Search
 
@@ -143,8 +144,6 @@ public class array {
    }
 }
 
-
-
    int low=0;
    int high=n-1;
    int found=0;
@@ -174,25 +173,12 @@ public class array {
     if(found==0){
         System.out.println(" The given Element is not found in the given array ");
     }
-
-
-
-
-
-
-       
-        
+      
 
  sc.close();
 
-
-
-
-
-
-
-
-
-
     }
 }
+
+
+*/

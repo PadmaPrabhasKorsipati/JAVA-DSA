@@ -97,9 +97,12 @@ sc.close();
 
 */
 
+
+
 //Insertion sort
 //Insertion sort is a simple sorting algorithm that works by iteratively inserting each element of an unsorted list into its correct position in a sorted portion of the list. It is like sorting playing cards in your hands. You split the cards into two groups: the sorted cards and the unsorted cards. Then, you pick a card from the unsorted group and put it in the right place in the sorted group.
 
+import java.util.Scanner;
 
 public class sorting {
 
@@ -107,12 +110,39 @@ public class sorting {
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter no.of Elements:");
         int n=sc.nextInt();
+        int temp;
         int[] arr=new int[n];
+
         for(int i=0;i<n;i++){
             arr[i]=sc.nextInt();
 
         }
+
+        for(int i=1;i<n;i++){
+            for(int j=i-1;i>0;i--){
+                if(arr[j]>arr[i]){
+                     temp=arr[j];
+                     arr[j]=arr[i];
+                     arr[i]=temp;
+
+
+                }
+            }
+        }
+
+
+        System.out.println("After Swapping:");
+        for(int i=0;i<n;i++){
+            System.out.print(arr[i]+" ");
+
+        }
+
         
+        
+
+
+
+        sc.close();
     }
 }
 

@@ -119,30 +119,34 @@ public class sorting {
         }
 
         for(int i=1;i<n;i++){
-            for(int j=i-1;j>=0;j--){
-                if(arr[j]>arr[i]){
-                     temp=arr[j];
-                     arr[j]=arr[i];
-                     arr[i]=temp;
+            temp=arr[i];
+            int j=i-1;
 
+            while(j>=0 && arr[j]>temp){
+                arr[j+1]=arr[j];
+                j--;
 
-                }
             }
-        }
+
+            arr[j+1]=temp;
+            }
 
 
-        System.out.println("After Swapping:");
+            System.out.println("After Swapping:");
         for(int i=0;i<n;i++){
             System.out.print(arr[i]+" ");
 
         }
 
+     sc.close();
         
+        }
+
         
+    }     
 
 
 
-        sc.close();
-    }
-}
+        
+    
 

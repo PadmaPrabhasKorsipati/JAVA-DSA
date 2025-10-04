@@ -213,5 +213,42 @@ public class array {
 
 
 
+//pairs in array
 
+import java.util.Scanner;
+
+public class array {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter the target:");
+        int tar=sc.nextInt();
+        System.out.print("Enter no.of Elements:");
+        int n=sc.nextInt();
+        int[] arr=new int[n];
+        for(int i=0;i<n;i++){
+        arr[i]=sc.nextInt();
+
+        }
+        int f=0;
+
+        for(int i=0;i<n;i++){
+            for(int j=0 ;j<n;j++){
+
+                if((arr[i]+arr[j]==tar) && i!=j){
+                    f+=1;
+                    System.out.print("("+arr[i]+","+arr[j]+")"+",");
+                }
+
+            }
+
+        }
+
+        if(f==0){
+            System.out.println("No Elements found");
+        }
+        sc.close(); 
+
+    }
+}
 

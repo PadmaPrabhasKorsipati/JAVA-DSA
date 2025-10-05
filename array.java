@@ -256,8 +256,9 @@ public class array {
 
 
 
-
+/* 
 //Sub-arrays
+
 import java.util.Scanner;
 public class array {
 
@@ -273,12 +274,27 @@ public class array {
 
         for(int i=0;i<n;i++){
             for(int j=i;j<n;j++){
-                System.out.print(arr[j]+",");
+                System.out.print("[");
+             for(int k=i;k<=j;k++){
+                System.out.print(arr[k]+(k<j ? "," : ""));
+             }
+            System.out.println("]");
             }
-            System.out.println();
+            
+            
         }
 
 
         
     }
 }
+
+*/
+
+
+
+
+
+
+
+

@@ -212,7 +212,7 @@ public class array {
 */
 
 
-
+/* 
 //pairs in array
 
 import java.util.Scanner;
@@ -252,3 +252,33 @@ public class array {
     }
 }
 
+*/
+
+
+
+
+//Sub-arrays
+import java.util.Scanner;
+public class array {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter no.of Elements:");
+        int n=sc.nextInt();
+        int[] arr=new int[n];
+        for(int i=0;i<n;i++){
+        arr[i]=sc.nextInt();
+
+        }
+
+        for(int i=0;i<n;i++){
+            for(int j=i;j<n;j++){
+                System.out.print(arr[j]+",");
+            }
+            System.out.println();
+        }
+
+
+        
+    }
+}

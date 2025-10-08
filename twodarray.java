@@ -33,3 +33,13 @@ public class twodarray {
     }
 }
 */
+
+
+//spiral matrix
+
+public class twodarray {
+
+    public static void main(String[] args) {
+        
+    }
+}

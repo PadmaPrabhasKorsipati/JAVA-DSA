@@ -113,3 +113,6 @@ static void printSpiral(int[][] arr, int rows, int cols) {
 
 
   }  
+
+
+//Diagonal sum

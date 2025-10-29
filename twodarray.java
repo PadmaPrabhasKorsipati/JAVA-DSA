@@ -116,3 +116,13 @@ static void printSpiral(int[][] arr, int rows, int cols) {
 
 
 //Diagonal sum
+
+public class Innertwodarray {
+
+    public static void main(String[] args) {
+        
+        
+        
+    }
+    
+}

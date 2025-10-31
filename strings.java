@@ -17,10 +17,10 @@ public class strings {
             if(str.charAt(i)!=str.charAt(n-1-i)){
                 return false;
             }
-            else{
-                return true;
-            }
+           
         }
+
+        return true;
         
     }
     

@@ -118,7 +118,7 @@ static void printSpiral(int[][] arr, int rows, int cols) {
  */
 
 
-
+/*
 //Diagonals sum
 
 import java.util.Scanner;
@@ -169,3 +169,8 @@ public class Innertwodarray {
     }
     
 }
+
+ */
+
+
+ 

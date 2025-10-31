@@ -18,7 +18,7 @@ public class strings {
                 return false;
             }
             else{
-                return true
+                return true;
             }
         }
         

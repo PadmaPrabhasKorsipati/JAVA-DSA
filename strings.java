@@ -1,3 +1,6 @@
+
+//Palindrome check 
+/* 
 import java.util.Scanner;
 
 public class strings {
@@ -25,3 +28,5 @@ public class strings {
     }
     
 }
+
+*/

@@ -118,12 +118,52 @@ static void printSpiral(int[][] arr, int rows, int cols) {
  */
 
 
-//Diagonal sum
 
+//Diagonals sum
+
+import java.util.Scanner;
 public class Innertwodarray {
 
     public static void main(String[] args) {
+       Scanner sc=new Scanner(System.in);
+
+         System.out.print("Enter no.of Rows:");
+        int rows=sc.nextInt();
+        System.out.print("Enter no.of Columns:");
+        int columns=sc.nextInt();
+
+        int[][] arr=new int[rows][columns];
+
+        for(int i=0;i<rows;i++){
+            for(int j=0;j<columns;j++){
+                arr[i][j]=sc.nextInt();
+            }
+        }
+
+
+        int sum=0;
+        int i=0;
+        int j=0;
+        int k=rows-1;
+        while(i<rows && k>=0){
+            sum +=arr[i][j];
+            sum +=arr[i][k];
+            
+            if(k==j){
+                sum -=arr[i][k];
+            }
+
+            i++;
+            j++;
+            k--;
+        }
+
+        System.out.println("Sum of Diagonals="+sum);
+
+
         
+
+
 
         
     }

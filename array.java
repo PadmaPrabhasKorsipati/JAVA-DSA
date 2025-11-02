@@ -22,9 +22,7 @@ public class array {
 
         sc.close();
     }
-    
-
-    
+     
 }
 */
 

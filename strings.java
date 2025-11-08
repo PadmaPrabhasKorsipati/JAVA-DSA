@@ -34,7 +34,7 @@ public class strings {
 
 
 //shortest distance
-
+/* 
 import java.util.Scanner;
 
 public class strings {
@@ -68,3 +68,8 @@ public class strings {
         sc.close();
     }
 }
+
+*/
+
+
+

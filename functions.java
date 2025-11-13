@@ -92,7 +92,7 @@ public class functions {
     static void isarmstrong(int num){
         int a=num;
         int sum=0;
-        int cube=0;
+        double cube=0;
 
         while(a>0){
             int rem=a%10;

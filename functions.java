@@ -61,11 +61,12 @@ public class functions {
       
         int num=sc.nextInt();
 
-        isprime(num);
+        isarmstrong(num);
 
 
         
     }
+
 
     static void isprime(int num){
        int sum=0;
@@ -83,6 +84,30 @@ public class functions {
 
         else{
             System.out.println("The given Number is not a Prime Number.");
+        }
+    }
+
+
+
+    static void isarmstrong(int num){
+        int a=num;
+        int sum=0;
+        int cube=0;
+
+        while(a>0){
+            int rem=a%10;
+            cube=Math.pow(rem,3);
+            sum+=cube;
+            a=a/10;
+
+        }
+
+        if(num==sum){
+            System.out.println("The given Number is a Armstrong Number");
+        }
+
+        else{
+            System.out.println("The given Number is not a Armstrong Number");
         }
     }
 

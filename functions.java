@@ -61,7 +61,11 @@ public class functions {
       
         int num=sc.nextInt();
 
-        isarmstrong(num);
+       for(int j=100;j<1000;j++){
+        if(isarmstrong(j)){
+            System.out.println(j+" ");
+        }
+       }
 
 
         
@@ -89,7 +93,7 @@ public class functions {
 
 
 
-    static void isarmstrong(int num){
+    static boolean isarmstrong(int num){
         int a=num;
         int sum=0;
         double cube=0;
@@ -103,12 +107,10 @@ public class functions {
         }
 
         if(num==sum){
-            System.out.println("The given Number is a Armstrong Number");
+           return true;
         }
 
-        else{
-            System.out.println("The given Number is not a Armstrong Number");
-        }
+        
     }
 
 

@@ -1,11 +1,9 @@
 {
-    "gitdoc.enabled": false,
+    "gitdoc.enabled": true,
 
     "gitdoc.filePattern": "**/*",
-
-    "gitdoc.commitValidationLevel": "none",
-
     "gitdoc.excludeBranches": [],
+    "gitdoc.commitValidationLevel": "none",
 
     "gitdoc.autoCommit": true,
     "gitdoc.autoCommitDelay": 30000,

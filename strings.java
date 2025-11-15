@@ -28,7 +28,6 @@ public class strings {
     }
     
 }
-
 */
 
 
@@ -60,6 +59,7 @@ public class strings {
                 x-=1;
             }
         }
+            
 
         double distance=Math.sqrt(y*y-x*x);
 

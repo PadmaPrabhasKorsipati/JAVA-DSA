@@ -87,32 +87,33 @@ public class practice {
     }
 }
 */
-//hi
+//Palindrome check 
+/* 
 import java.util.Scanner;
 
-public class practice {
+public class strings {
 
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-        System.out.print("Enter the number:");
-        int num=sc.nextInt();
-        int rev;
-        int org=num;
+        System.out.println("Enter the String:");
+        String str=sc.nextLine();
+        System.out.println(checkpalindrome(str));
 
-        rev=0;
-        while(num!=0){
-            int digit=num%10;
-            rev=rev*10+digit;
-            num=num/10;
-
-        }
-        System.out.println("Original:"+org);
-        System.out.println("Reversed:"+rev);
-
-        sc.close();
 
     }
+    public static boolean checkpalindrome(String str) {
+        int n=str.length();
+        for(int i=0;i<n/2;i++){
+            if(str.charAt(i)!=str.charAt(n-1-i)){
+                return false;
+            }
+           
+        }
+
+        return true;
+        
+    }
+    
 }
-
-
+*/
 

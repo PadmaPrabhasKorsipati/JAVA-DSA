@@ -161,10 +161,7 @@ public class Innertwodarray {
         System.out.println("Sum of Diagonals="+sum);
 
 
-        
-
-
-
+    
         
     }
     

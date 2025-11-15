@@ -1,4 +1,5 @@
 {
     "gitdoc.enabled": true,
-    "gitdoc.excludeBranches": []
+    "gitdoc.excludeBranches": [],
+    "gitdoc.pushMode": "push"
 }

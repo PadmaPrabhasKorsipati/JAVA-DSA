@@ -1,5 +1,18 @@
 {
     "gitdoc.enabled": true,
+
+    "gitdoc.filePattern": "**/*",
+
+    "gitdoc.commitValidationLevel": "none",
+
     "gitdoc.excludeBranches": [],
-    "gitdoc.pushMode": "push"
+
+    "gitdoc.autoCommit": true,
+    "gitdoc.autoCommitDelay": 30000,
+
+    "gitdoc.autoPush": "onCommit",
+    "gitdoc.autoPushDelay": 30000,
+
+    "gitdoc.pullOnOpen": true,
+    "gitdoc.autoPull": "onPush"
 }

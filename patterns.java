@@ -291,6 +291,7 @@ public class patterns {
 
 */
 
+/* 
 
 import java.util.Scanner;
 
@@ -313,6 +314,41 @@ public class patterns {
         }
 
         sc.close();
+
+    }
+}
+*/
+
+//Fibonacci Numbers
+
+import java.util.Scanner;
+
+public class patterns {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter the number:");
+        int n=sc.nextInt();
+
+        int a=0;
+        int b=1;
+        int c;
+        int j=2;
+
+        System.out.print(a+" "+b);
+
+        while(j<=n){
+          c=a+b;
+          System.out.print(" "+c);
+
+          a=b;
+          b=c;
+
+          j++;
+
+
+
+        }
 
     }
 }

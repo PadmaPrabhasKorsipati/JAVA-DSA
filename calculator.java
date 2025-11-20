@@ -6,7 +6,7 @@ public class calculator {
         while(true){
             Scanner sc=new Scanner(System.in);
 
-            System.out.print("Enter the type of Operator");
+            System.out.print("Enter the type of Operator:");
 
 
             char op=sc.next().trim().charAt(0);

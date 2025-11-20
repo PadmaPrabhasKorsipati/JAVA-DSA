@@ -61,6 +61,8 @@ public class calculator {
                 System.out.println("Enter valid operator.");
             }
 
+            sc.close();
+
 
         }
         

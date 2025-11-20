@@ -24,7 +24,7 @@ public class calculator {
 
                 }
 
-                elseif (op=='-') {
+                else if (op=='-') {
                     ans=num1-num2;
                     
                 }

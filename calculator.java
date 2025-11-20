@@ -34,8 +34,13 @@ public class calculator {
                     
                 }
 
-                 else if (op=='/'&& num2!=0) {
-                    ans=num1/num2;
+                 else if (op=='/') {
+                    if(num2!=0){  
+                        ans=num1/num2;
+                  }
+                  else{
+                    System.out.println("Enter valid number");
+                  }
                   
                     
                 }

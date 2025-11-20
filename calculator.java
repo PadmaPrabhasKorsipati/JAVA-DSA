@@ -24,22 +24,22 @@ public class calculator {
 
                 }
 
-                else-if (op=="-") {
+                else if (op=="-") {
                     ans=num1-num2;
                     
                 }
 
-                 else-if (op=="*") {
+                 else if (op=="*") {
                     ans=num1*num2;
                     
                 }
 
-                 else-if (op=="/"&& num2!=0) {
+                 else if (op=="/"&& num2!=0) {
                     ans=num1/num2;
                   
                     
                 }
-                 else-if (op=="%") {
+                 else if (op=="%") {
                     ans=num1%num2;
                     
                 }
@@ -47,7 +47,7 @@ public class calculator {
                 System.out.println(ans);
 
             }
-            else-if(op="x" || op="X"){
+            else if(op="x" || op="X"){
                 break;
 
             }

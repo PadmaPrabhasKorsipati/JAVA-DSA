@@ -350,5 +350,7 @@ public class patterns {
 
         }
 
+        sc.close();
+
     }
 }

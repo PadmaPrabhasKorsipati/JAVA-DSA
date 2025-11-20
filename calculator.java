@@ -13,33 +13,33 @@ public class calculator {
 
             int ans=0;
 
-            if(op=="+" || op=="-" || op=="*" || op=="/" || op=="%"){
+            if(op=='+' || op=='-' || op=='*' || op=='/' || op=='%'){
                 System.out.print("Enter two Numbers:");
 
                 int num1=sc.nextInt();
                 int num2=sc.nextInt();
 
-                if(op=="+"){
+                if(op=='+'){
                     ans=num1+num2;
 
                 }
 
-                else if (op=="-") {
+                elseif (op=='-') {
                     ans=num1-num2;
                     
                 }
 
-                 else if (op=="*") {
+                 else if (op=='*') {
                     ans=num1*num2;
                     
                 }
 
-                 else if (op=="/"&& num2!=0) {
+                 else if (op=='/'&& num2!=0) {
                     ans=num1/num2;
                   
                     
                 }
-                 else if (op=="%") {
+                 else if (op=='%') {
                     ans=num1%num2;
                     
                 }
@@ -47,7 +47,7 @@ public class calculator {
                 System.out.println(ans);
 
             }
-            else if(op="x" || op="X"){
+            else if(op='x' || op='X'){
                 break;
 
             }

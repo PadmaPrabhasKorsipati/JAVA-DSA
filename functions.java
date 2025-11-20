@@ -48,7 +48,7 @@ public class functions {
 //Questions
 
 //Prime Numbers
-
+/* 
 import java.util.Scanner;
 
 public class functions {
@@ -118,3 +118,4 @@ public class functions {
 
 }
 
+*/

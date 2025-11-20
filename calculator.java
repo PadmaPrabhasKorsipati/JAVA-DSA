@@ -47,7 +47,7 @@ public class calculator {
                 System.out.println(ans);
 
             }
-            else if(op='x' || op='X'){
+            else if(op=='x' || op=='X'){
                 break;
 
             }

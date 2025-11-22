@@ -14,7 +14,11 @@ public class leetcode {
         nums[i]=sc.nextInt();
 
     }
-    System.out.println(buildArray(nums));
+    int[] result = buildArray(nums);
+for (int x : result) {
+    System.out.print(x + " ");
+}
+
 
 sc.close();
 

@@ -120,3 +120,25 @@ public class functions {
 
 */
 
+/* 
+public class functions {
+
+    public static void main(String[] args) {
+    int[] arr={1,2,3,4};
+
+    swap(arr,1,2);
+    System.out.println(arr[1]+" "+arr[2]);
+
+
+    }
+
+    public static void swap(int[] ar,int index1,int index2 ){
+      int temp=ar[1];
+      ar[1]=ar[2];
+      ar[2]=temp;
+
+    }
+}
+
+*/
+

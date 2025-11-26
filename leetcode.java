@@ -188,7 +188,7 @@ public class leetcode {
             System.out.print("Enter number of banks for customer " + (i + 1) + ": ");
             int cols = sc.nextInt();
 
-           
+             accounts[i] = new int[cols];
 
             System.out.println("Enter money for customer " + (i + 1) + ":");
             for (int j = 0; j < cols; j++) {

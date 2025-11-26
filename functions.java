@@ -142,3 +142,13 @@ public class functions {
 
 */
 
+//Maximum Element in an array
+
+
+public class functions {
+
+    public static void main(String[] args) {
+        
+    }
+}
+

@@ -41,6 +41,7 @@ sc.close();
 
 
 //concatenation of array
+/* 
 import java.util.Scanner;
 public class leetcode {
 
@@ -79,3 +80,45 @@ sc.close();
 }
 
 
+*/
+
+
+// sum of 1d array
+import java.util.Scanner;
+public class leetcode {
+
+    public static void main(String[] args) {
+
+        Scanner sc=new Scanner(System.in);
+
+    int [] nums=new int[6];
+
+    for(int i=0;i<nums.length;i++){
+        nums[i]=sc.nextInt();
+
+    }
+
+    int[] result=runningSum(nums);
+
+    for(int x: result){
+        System.out.print(x+" ");
+    }
+sc.close();  
+        
+    }
+
+
+public static int[] runningSum(int[] nums){
+    int[] ans=new int[nums.length];
+    int sum=0;
+    for(int i=0;i<ans.length;i++){
+        for(int j=0;j<=i;j++){
+            sum+=nums[i];
+        }
+        ans[i]=sum;
+
+    }
+
+    return ans;
+}
+}

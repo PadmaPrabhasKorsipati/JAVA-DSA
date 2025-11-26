@@ -116,6 +116,7 @@ public static int[] runningSum(int[] nums){
             sum+=nums[i];
         }
         ans[i]=sum;
+        sum=0;
 
     }
 

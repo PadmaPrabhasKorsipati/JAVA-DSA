@@ -112,11 +112,12 @@ public static int[] runningSum(int[] nums){
     int[] ans=new int[nums.length];
     int sum=0;
     for(int i=0;i<ans.length;i++){
+        sum=0;
         for(int j=0;j<=i;j++){
             sum+=nums[i];
         }
         ans[i]=sum;
-        sum=0;
+        
 
     }
 

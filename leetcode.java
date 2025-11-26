@@ -91,7 +91,7 @@ public class leetcode {
 
         Scanner sc=new Scanner(System.in);
 
-    int [] nums=new int[6];
+    int [] nums=new int[4];
 
     for(int i=0;i<nums.length;i++){
         nums[i]=sc.nextInt();

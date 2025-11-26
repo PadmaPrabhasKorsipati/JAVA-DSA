@@ -84,6 +84,7 @@ sc.close();
 
 
 // sum of 1d array
+/* 
 import java.util.Scanner;
 public class leetcode {
 
@@ -120,4 +121,102 @@ public static int[] runningSum(int[] nums){
 
     return ans;
 }
+}
+
+*/
+/* 
+import java.util.Scanner;
+public class leetcode {
+
+    public static void main(String[] args) {
+
+        Scanner sc=new Scanner(System.in);
+
+    int [][] nums=new int[4][];
+
+    for(int i=0;i<nums.length;i++){
+        for(int j=0;j<nums.length;j++){
+        nums[i][j]=sc.nextInt();
+        }
+
+    }
+  System.out.println(maximumWealth(nums));
+
+   
+sc.close();  
+        
+    }
+
+     public static int maximumWealth(int[][] accounts) {
+        
+       int  rich=0;
+
+        for(int i=0;i<accounts.length;i++){
+            int sum=0;
+            for(int j=0;j<=i;j++){
+                sum+=accounts[i][j];
+                
+
+            }
+            if(rich<sum){
+                rich=sum;
+            }
+        }
+
+        return rich;
+
+    }
+}
+*/
+
+import java.util.Scanner;
+
+public class leetcode {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        // Ask how many rows (customers)
+        System.out.print("Enter number of customers (rows): ");
+        int rows = sc.nextInt();
+
+        int[][] accounts = new int[rows][];
+
+        // Input different column sizes for each row
+        for (int i = 0; i < rows; i++) {
+            System.out.print("Enter number of banks for customer " + (i + 1) + ": ");
+            int cols = sc.nextInt();
+
+           
+
+            System.out.println("Enter money for customer " + (i + 1) + ":");
+            for (int j = 0; j < cols; j++) {
+                accounts[i][j] = sc.nextInt();
+            }
+        }
+
+        // Call function
+        System.out.println("Maximum Wealth = " + maximumWealth(accounts));
+
+        sc.close();
+    }
+
+    public static int maximumWealth(int[][] accounts) {
+
+        int rich = 0;
+
+        for (int i = 0; i < accounts.length; i++) {
+            int sum = 0;
+
+            // IMPORTANT: this handles uneven column sizes
+            for (int j = 0; j < accounts[i].length; j++) {
+                sum += accounts[i][j];
+            }
+
+            rich = Math.max(rich, sum);
+        }
+
+        return rich;
+    }
 }

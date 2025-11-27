@@ -124,51 +124,9 @@ public static int[] runningSum(int[] nums){
 }
 
 */
-/* 
-import java.util.Scanner;
-public class leetcode {
 
-    public static void main(String[] args) {
-
-        Scanner sc=new Scanner(System.in);
-
-    int [][] nums=new int[4][];
-
-    for(int i=0;i<nums.length;i++){
-        for(int j=0;j<nums.length;j++){
-        nums[i][j]=sc.nextInt();
-        }
-
-    }
-  System.out.println(maximumWealth(nums));
-
-   
-sc.close();  
-        
-    }
-
-     public static int maximumWealth(int[][] accounts) {
-        
-       int  rich=0;
-
-        for(int i=0;i<accounts.length;i++){
-            int sum=0;
-            for(int j=0;j<=i;j++){
-                sum+=accounts[i][j];
-                
-
-            }
-            if(rich<sum){
-                rich=sum;
-            }
-        }
-
-        return rich;
-
-    }
-}
-*/
-
+//maxximum wealth 
+/*
 import java.util.Scanner;
 
 public class leetcode {
@@ -220,3 +178,32 @@ public class leetcode {
         return rich;
     }
 }
+ */
+
+
+
+//Shuffle the array
+
+public static void main(String[] args) {
+
+        Scanner sc=new Scanner(System.in);
+
+    int [] nums=new int[4];
+
+    for(int i=0;i<nums.length;i++){
+        nums[i]=sc.nextInt();
+
+    }
+
+    int[] result=runningSum(nums);
+
+    for(int x: result){
+        System.out.print(x+" ");
+    }
+sc.close();  
+        
+    }
+
+
+
+

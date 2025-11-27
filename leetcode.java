@@ -263,7 +263,7 @@ public static int numIdenticalPairs(int[] nums) {
 
 }
 */
-
+/* 
 // greatest numbers
 
 import java.util.Scanner;
@@ -307,3 +307,50 @@ sc.close();
     }
 
 }
+
+*/
+
+// index and  numbers to a targeted array
+
+import java.util.Scanner;
+public class leetcode {
+
+public static void main(String[] args) {
+
+    Scanner sc=new Scanner(System.in);
+
+    int [] nums=new int[6];
+    int [] index=new int[6];
+
+    for(int i=0;i<nums.length;i++){
+        nums[i]=sc.nextInt();
+
+    }
+    
+    for(int i=0;i<nums.length;i++){
+        index[i]=sc.nextInt();
+
+    }
+    int[] result=createTargetArray(nums,index);
+    
+    for(int x: result){
+        System.out.print(x+" ");
+    }
+   
+
+    sc.close();;
+}
+
+ public static  int[] createTargetArray(int[] nums, int[] index) {
+    int[] ans=new int[nums.length];
+    for(int i=0;i<nums.length;i++){
+
+        ans[index[i]]=nums[i];
+
+    }
+     
+    return ans;
+    }
+
+}
+

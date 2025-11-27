@@ -227,6 +227,7 @@ public static int[] shuffle(int[] nums, int n) {
 //no.of good pairrs
 
 //Shuffle the array
+/* 
 import java.util.Scanner;
 public class leetcode {
 
@@ -258,6 +259,51 @@ public static int numIdenticalPairs(int[] nums) {
         
     }
     return count;
+    }
+
+}
+*/
+
+// greatest numbers
+
+import java.util.Scanner;
+public class leetcode {
+
+public static void main(String[] args) {
+
+    Scanner sc=new Scanner(System.in);
+
+    int [] nums=new int[6];
+
+    for(int i=0;i<nums.length;i++){
+        nums[i]=sc.nextInt();
+
+    }
+
+     int[] result=smallerNumbersThanCurrent(nums);
+
+    for(int x: result){
+        System.out.print(x+" ");
+    }
+sc.close();
+
+
+}
+ public static int[] smallerNumbersThanCurrent(int[] nums) {
+        int[] ans=new int[nums.length];
+        int count;
+        for(int i=0;i<nums.length;i++){
+            count=0;
+            for(int j=0;j<nums.length;j++){
+                if(nums[i]>nums[j]){
+                    count+=1;
+                }
+
+            }
+            ans[i]=count;
+        }
+
+        return ans;
     }
 
 }

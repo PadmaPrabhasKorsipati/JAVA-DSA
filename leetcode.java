@@ -210,7 +210,7 @@ public static int[] shuffle(int[] nums, int n) {
 
     for(int i=0;i<n;i++){
         nums[2*i]=nums[i];
-        nums[i+1]=nums[n+1];
+        nums[i+1]=nums[n+i];
         
     }
 

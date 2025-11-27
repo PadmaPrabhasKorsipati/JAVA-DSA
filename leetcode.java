@@ -183,27 +183,41 @@ public class leetcode {
 
 
 //Shuffle the array
+import java.util.Scanner;
+public class leetcode {
 
 public static void main(String[] args) {
 
         Scanner sc=new Scanner(System.in);
 
     int [] nums=new int[4];
-
+    System.out.println("Enter the number");
+     int n=sc.nextInt();
     for(int i=0;i<nums.length;i++){
         nums[i]=sc.nextInt();
 
     }
 
-    int[] result=runningSum(nums);
+    int[] result=shuffle(nums,n);
 
     for(int x: result){
         System.out.print(x+" ");
     }
-sc.close();  
+sc.close(); 
+    
+    }
+public static int[] shuffle(int[] nums, int n) {
+
+    for(int i=0;i<n;i++){
+        nums[2*n]=nums[i];
+        nums[i+1]=nums[n+1];
+        
+    }
+
+    return nums;
         
     }
 
 
-
+}
 

@@ -181,7 +181,7 @@ public class leetcode {
  */
 
 
-
+/* 
 //Shuffle the array
 import java.util.Scanner;
 public class leetcode {
@@ -221,3 +221,43 @@ public static int[] shuffle(int[] nums, int n) {
 
 }
 
+*/
+
+
+//no.of good pairrs
+
+//Shuffle the array
+import java.util.Scanner;
+public class leetcode {
+
+public static void main(String[] args) {
+
+    Scanner sc=new Scanner(System.in);
+
+    int [] nums=new int[6];
+
+    for(int i=0;i<nums.length;i++){
+        nums[i]=sc.nextInt();
+
+    }
+    int result=numIdenticalPairs(nums);
+    System.out.println(result);
+
+    sc.close();;
+}
+public static int numIdenticalPairs(int[] nums) {
+        int count=0;
+    for(int i=0;i<nums.length;i++){
+        for(int j=i+1;j<nums.length;j++){
+            if(nums[i]==nums[j]){
+                count+=1;
+
+            }
+        }
+
+        
+    }
+    return count;
+    }
+
+}

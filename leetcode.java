@@ -319,8 +319,8 @@ public static void main(String[] args) {
 
     Scanner sc=new Scanner(System.in);
 
-    int [] nums=new int[6];
-    int [] index=new int[6];
+    int [] nums=new int[5];
+    int [] index=new int[5];
 
     for(int i=0;i<nums.length;i++){
         nums[i]=sc.nextInt();
@@ -332,7 +332,7 @@ public static void main(String[] args) {
 
     }
     int[] result=createTargetArray(nums,index);
-    
+
     for(int x: result){
         System.out.print(x+" ");
     }

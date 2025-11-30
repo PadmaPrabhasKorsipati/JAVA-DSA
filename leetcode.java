@@ -358,3 +358,41 @@ public static void main(String[] args) {
 
 
 
+//no.of even digits in  a number
+import java.util.Scanner;
+public class leetcode {
+
+    public static void main(String[] args) {
+         Scanner sc=new Scanner(System.in);
+
+    int [] nums=new int[6];
+
+    for(int i=0;i<nums.length;i++){
+        nums[i]=sc.nextInt();
+
+    }
+
+     int result=findNumbers(nums)   ;
+
+     System.out.println(result);
+
+     sc.close();
+    }
+
+     public static  int findNumbers(int[] nums) {
+        int count=0;
+        for(int i=0;i<nums.length;i++){
+            int temp=0;
+          while(nums[i]>0){
+            temp++;
+            nums[i]/=10;
+          }
+          if(temp%2==0){
+            count+=1;
+          }
+        }
+
+        return count;
+        
+    }
+}

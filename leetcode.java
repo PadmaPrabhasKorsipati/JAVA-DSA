@@ -311,7 +311,7 @@ sc.close();
 */
 
 // index and  numbers to a targeted array
-
+/* 
 import java.util.Scanner;
 public class leetcode {
 
@@ -353,4 +353,8 @@ public static void main(String[] args) {
     }
 
 }
+
+*/
+
+
 

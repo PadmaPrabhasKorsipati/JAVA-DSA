@@ -71,7 +71,7 @@ public class search {
             System.out.println("The Element found at index:"+index);
         }
         else{
-            System.out.println("The Element not found int the given array");
+            System.out.println("The Element not found int  the given array");
         }
 
         sc.close();

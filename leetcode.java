@@ -359,6 +359,7 @@ public static void main(String[] args) {
 
 
 //no.of even digits in  a number
+/* 
 import java.util.Scanner;
 public class leetcode {
 
@@ -396,3 +397,5 @@ public class leetcode {
         
     }
 }
+*/
+

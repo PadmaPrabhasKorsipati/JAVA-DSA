@@ -1,7 +1,7 @@
 
 //Linear Search
 // it has the worst time complexity
-
+/* 
 import java.util.Scanner;
 
 public class search {
@@ -34,4 +34,50 @@ public class search {
     
 
     }
+}
+*/
+
+//Binary Search
+
+import java.util.Scanner;
+
+public class search {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int[] arr={1,2,3,4,5,6,7};
+        System.out.print("Enter the Element to search:");
+        int target=sc.nextInt();
+        int s=0;
+        int e=arr.length-1;
+        int index=-1;
+        while(s<=e){
+            int mid=s+((e-s)/2);
+
+            if(arr[mid]==target){
+                index=mid;
+                break;
+            }
+            else if(arr[mid]>target){
+                e=mid-1;
+            }
+            else{
+                s=mid+1;
+            }
+
+        }
+
+        if(index!=-1){
+            System.out.println("The Element found at index:"+index);
+        }
+        else{
+            System.out.println("The Element not found int the given array");
+        }
+
+        sc.close();
+
+
+    }
+
+
 }

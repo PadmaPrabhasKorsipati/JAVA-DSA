@@ -120,13 +120,12 @@ public class interview {
 
         while (s<=e) {
               int mid=s+((e-s)/2);
-            if(letter[mid]<target){
-                s=mid+1;
-            }
-            else{
+            if(letter[mid]>target){
                 e=mid-1;
             }
-            
+            else{
+                s=mid+1;
+            }
         }
 
         return letter[(s%(letter.length))];

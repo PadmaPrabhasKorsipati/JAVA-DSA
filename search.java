@@ -118,9 +118,10 @@ public class search {
         int e=arr.length-1;
         boolean ASC=arr[s]<arr[e];
         
-        int mid=s-((e-s)/2);
-
         while(s<=e){
+            
+        int mid=s+((e-s)/2);
+
             if(arr[mid]==target){
                 return mid;
             }

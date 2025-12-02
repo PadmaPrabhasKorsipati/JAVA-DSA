@@ -51,7 +51,7 @@ public class interview {
 //Floor of a Number
 //Floor is a number that is greatest smaller or eaual to target 
 //to find a Floor number first an array need to be sorted  in ASC
-
+/* 
 import java.util.Scanner;
 public class interview {
 
@@ -90,3 +90,7 @@ public class interview {
         
     }
 }
+
+*/
+
+

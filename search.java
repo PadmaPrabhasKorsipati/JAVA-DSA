@@ -38,7 +38,7 @@ public class search {
 */
 
 //Binary Search
-
+/* 
 import java.util.Scanner;
 
 public class search {
@@ -77,6 +77,74 @@ public class search {
         sc.close();
 
 
+    }
+
+
+}
+
+*/
+
+
+
+
+// Order Agnostoic Binary  search
+
+import java.util.Scanner;
+
+public class search {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+
+        int[] arr={5,4,3,2,1};
+       System.out.print("Enter the Element to find:");
+        int target=sc.nextInt();
+        int result=OrderAgnosticBS(arr, target);
+
+        if(result!=-1){
+            System.out.println("The Element found at index :"+result);
+
+        }
+        else{
+            System.out.println("The Element not found in the given array. ");
+        }
+
+        sc.close();
+        
+    }
+   
+    static int OrderAgnosticBS(int[] arr,int target){
+        int s=0;
+        int e=arr.length-1;
+        boolean ASC=arr[s]<arr[e];
+        
+        int mid=s-((e-s)/2);
+
+        while(s<=e){
+            if(arr[mid]==target){
+                return mid;
+            }
+
+            if(ASC){
+                if (arr[mid]<target) {
+                    s=mid+1;
+                    
+                }
+                else{
+                    e=mid-1;
+                }
+            }
+
+            else{
+                if(arr[mid]<target){
+                    e=mid-1;
+                }
+                else{
+                    s=mid+1;
+                }
+            }
+        }
+        return -1;
     }
 
 

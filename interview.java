@@ -116,9 +116,10 @@ public class interview {
         int s=0;
         int e=letter.length-1;
         
-        int mid=s+((e-s)/2);
+      
 
         while (s<=e) {
+              int mid=s+((e-s)/2);
             if(letter[mid]<target){
                 s=mid+1;
             }

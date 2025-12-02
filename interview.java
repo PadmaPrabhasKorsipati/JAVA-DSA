@@ -1,5 +1,5 @@
 //Interview Questions by Kunal Kushwaha
-
+/* */
 //1.Ceiling of a Number
 //Ceiling= smallest element in array greater or equal to target 
 // to find a ceiling number first an array need to be sorted 
@@ -21,24 +21,14 @@ public class interview {
             int mid=s+((e-s))/2;
             if(arr[mid]>=target){
                index=mid;
-            }
+               e=mid-1;
 
-            if(arr[s]<arr[e]){
-                if(arr[mid]<target){
-                    s=mid+1;
-                }
-                else{
-                    e=mid-1;
-                }
             }
             else{
-                if(arr[mid]<target){
-                    e=mid-1;
-                }
-                else{
-                    s=mid+1;
-                }
+                s=mid+1;
             }
+
+          
 
         }
 

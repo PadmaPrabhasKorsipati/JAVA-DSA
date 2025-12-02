@@ -94,3 +94,40 @@ public class interview {
 */
 
 
+//Find the smallest letter greater than the target 
+
+import java.util.Scanner;
+
+public class interview {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+
+        char[] letter={'c','f','j'};
+        System.out.print("Enter the target character:");
+        char target=sc.next().charAt(0);
+
+        System.out.println("The Smallest Element greater than target is:"+Smallestelementgreattarget(letter, target));
+      sc.close();
+
+    }
+
+    static char Smallestelementgreattarget(char[] letter,char target){
+        int s=0;
+        int e=letter.length-1;
+        
+        int mid=s+((e-s)/2);
+
+        while (s<=e) {
+            if(letter[mid]<target){
+                s=mid+1;
+            }
+            else{
+                e=mid-1;
+            }
+            
+        }
+
+        return letter[(s%(letter.length))];
+    }
+}

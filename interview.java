@@ -144,9 +144,12 @@ public class interview {
         System.out.print("Enter the Element:");
         int target=sc.nextInt();
 
-        int[] result={firstpos(arr, target),Lastpos(arr, target)};
+        int first=firstpos(arr, target);
+        int last=Lastpos(arr, target);
+        
+        System.out.println(first+","+last);
 
-        System.out.println(result);
+
 
         sc.close();
         

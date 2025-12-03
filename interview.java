@@ -95,7 +95,7 @@ public class interview {
 
 
 //Find the smallest letter greater than the target 
-
+/* 
 import java.util.Scanner;
 
 public class interview {
@@ -130,4 +130,79 @@ public class interview {
 
         return letter[(s%(letter.length))];
     }
+}
+    */
+
+
+//Find First and Last Position of Element in Sorted Array
+import java.util.Scanner;
+public class interview {
+
+    public static void main(String[] args) {
+         Scanner sc=new Scanner(System.in);
+        int arr[]={5,7,7,8,8,10};
+        System.out.print("Enter the Element:");
+        int target=sc.nextInt();
+
+        int[] result={firstpos(arr, target),Lastpos(arr, target)};
+
+        System.out.println(result);
+
+        sc.close();
+        
+        
+    }
+
+    static int firstpos(int[] arr,int target){
+        int s=0;
+        int e=arr.length-1;
+        int index=-1;
+        while(s<=e){
+            
+        int mid=s+((e-s)/2);
+        
+            if(arr[mid]==target){
+                index=mid;
+                e=mid-1;
+
+            }
+            else if(arr[mid]>target){
+                e=mid-1;
+
+            }
+            else{
+                s=mid+1;
+            }
+
+        }
+
+        return index;
+    }
+
+static int Lastpos(int[] arr,int target){
+        int s=0;
+        int e=arr.length-1;
+        int index=-1;
+        while(s<=e){
+            
+        int mid=s+((e-s)/2);
+        
+            if(arr[mid]==target){
+                index=mid;
+                s=mid+1;
+
+            }
+            else if(arr[mid]>target){
+                e=mid-1;
+
+            }
+            else{
+                s=mid+1;
+            }
+
+        }
+
+        return index;
+    }
+
 }

@@ -134,7 +134,9 @@ public class interview {
     */
 
 
+/* 
 //Find First and Last Position of Element in Sorted Array
+
 import java.util.Scanner;
 public class interview {
 
@@ -209,3 +211,65 @@ static int Lastpos(int[] arr,int target){
     }
 
 }
+    \*/
+
+// Find the number ia an infinite array
+import java.util.Scanner;
+public class interview {
+
+    public static void main(String[] args) {
+         Scanner sc=new Scanner(System.in);
+        int arr[]={5,7,7,8,8,10};
+        System.out.print("Enter the Element:");
+        int target=sc.nextInt();
+
+        System.out.println(range(arr, target));
+
+        sc.close();
+        
+    }
+
+    public static int range(int[] arr,int target){
+        int start=0;
+        int end=1;
+        while(target>arr[end]){
+            int temp=end+1;
+
+            end=end+(end-start+1)*2;
+            start=temp;
+
+        }
+
+        return binarysearch(arr, start, end, target);
+    }
+
+    public static int binarysearch(int[] arr,int start,int end,int target){
+      
+
+        while(start<=end){
+              int mid=(start+(end-start))/2;
+
+              if(target==arr[mid]){
+
+                return mid;
+              }
+              else if(target<arr[mid]){
+                end=mid-1;
+              }
+
+              else{
+                start=mid+1;
+              }
+
+        }
+
+        
+              return -1;
+    }
+
+ 
+    
+
+     
+}
+  

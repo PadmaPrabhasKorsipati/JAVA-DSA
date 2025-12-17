@@ -219,7 +219,7 @@ public class interview {
 
     public static void main(String[] args) {
          Scanner sc=new Scanner(System.in);
-        int arr[]={5,7,7,8,8,10};
+        int arr[]={5,7,8,9,10,11,12,13,14,15,16,17,18};
         System.out.print("Enter the Element:");
         int target=sc.nextInt();
 
@@ -229,7 +229,7 @@ public class interview {
         
     }
 
-    public static int range(int[] arr,int target){
+ static int range(int[] arr,int target){
         int start=0;
         int end=1;
         while(target>arr[end]){
@@ -243,28 +243,26 @@ public class interview {
         return binarysearch(arr, start, end, target);
     }
 
-    public static int binarysearch(int[] arr,int start,int end,int target){
+    static int binarysearch(int[] arr,int start,int end,int target){
       
 
         while(start<=end){
-              int mid=(start+(end-start))/2;
+              int mid=start+(end-start)/2;
 
-              if(target==arr[mid]){
 
-                return mid;
-              }
-              else if(target<arr[mid]){
+              if(target<arr[mid]){
                 end=mid-1;
               }
-
-              else{
+              else if(target>arr[mid]){
                 start=mid+1;
               }
 
-        }
+              else{
+                return mid;
+              }
 
-        
-              return -1;
+        }
+      return -1;
     }
 
  

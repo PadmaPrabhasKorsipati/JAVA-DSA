@@ -214,6 +214,7 @@ static int Lastpos(int[] arr,int target){
     \*/
 
 // Find the number ia an infinite array
+/* 
 import java.util.Scanner;
 public class interview {
 
@@ -265,9 +266,46 @@ public class interview {
       return -1;
     }
 
- 
-    
-
-     
 }
-  
+  */
+
+
+//peak index in a  mountain array
+
+import java.util.Scanner;
+
+public class interview {
+
+    public static void main(String[] args) {
+
+        Scanner sc=new Scanner(System.in);
+
+        int[] arr=new int[5];
+        System.out.println("Enter numbers:");
+        for(int i=0;i<arr.length;i++){
+
+            arr[i]=sc.nextInt();
+
+        }
+
+        System.out.println("peak of the Mountain Array:"peakarray(arr));
+
+        sc.close();
+         
+    }
+
+
+    public static int peakarray(int[] arr){
+        int peak=0;
+        for(int i=0;i<arr.length;i++){
+            if(arr[i]>arr[peak]){
+                peak=i;
+            }
+        }
+
+        return peak;
+      
+    }
+}
+
+

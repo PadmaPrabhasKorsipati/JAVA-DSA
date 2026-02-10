@@ -288,7 +288,7 @@ public class interview {
 
         }
 
-        System.out.println("peak of the Mountain Array:"peakarray(arr));
+        System.out.println("peak of the Mountain Array:"+peakarray(arr));
 
         sc.close();
          

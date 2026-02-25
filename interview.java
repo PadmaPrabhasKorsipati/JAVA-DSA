@@ -341,7 +341,7 @@ public class interview {
             System.out.print(pres+" ");
 
             dprev=prev;
-            prev=i;
+            prev=pres;
             pres=dprev+prev;
 
 

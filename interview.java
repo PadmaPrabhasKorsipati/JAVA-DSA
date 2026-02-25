@@ -338,7 +338,7 @@ public class interview {
         System.out.print(dprev+" ");
         for(int i=1;i<num;i++){
 
-            System.out.print(pres+"");
+            System.out.print(pres+" ");
 
             dprev=prev;
             prev=pres;

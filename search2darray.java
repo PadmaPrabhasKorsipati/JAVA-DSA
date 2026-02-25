@@ -4,7 +4,7 @@ public class search2darray {
 
         int[][] matrix={{10,20,30,40},{15,25,35,45},{28,29,37,49},{33,34,39,50}};
 
-        System.out.println(search(matrix, 37));
+        System.out.println(Arrays.toString(search(matrix, 37)));
         
     }
 

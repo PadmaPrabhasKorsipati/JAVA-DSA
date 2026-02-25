@@ -323,7 +323,7 @@ public class interview {
 
 //Fibonacci series 
 //F(n)=F(n-1)+F(n-2)
-
+/* 
 import java.util.Scanner;
 
 public class interview {
@@ -347,5 +347,25 @@ public class interview {
 
         sc.close();
 
+    }
+}
+
+*/
+
+
+//Armstrong Number
+
+/* */
+
+import java.util.Scanner;
+
+public class interview {
+
+    public static void main(String[] args) {
+
+        Scanner sc=new Scanner(System.in);
+
+        
+        
     }
 }

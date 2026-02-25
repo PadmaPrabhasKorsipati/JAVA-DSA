@@ -272,6 +272,8 @@ public class interview {
 
 //peak index in a  mountain array
 
+/* 
+
 import java.util.Scanner;
 
 public class interview {
@@ -296,16 +298,54 @@ public class interview {
 
 
     public static int peakarray(int[] arr){
-        int peak=0;
-        for(int i=0;i<arr.length;i++){
-            if(arr[i]>arr[peak]){
-                peak=i;
-            }
-        }
+        int start=0;
+        int end=arr.length-1;
+      while (start < end) {
 
-        return peak;
+        int mid = start + (end - start) / 2;
+
+        if (arr[mid] > arr[mid + 1]) {
+            // You are in decreasing part
+            end = mid;
+        } else {
+            // You are in increasing part
+            start = mid + 1;
+        }
+    }
+
+    return start;
       
     }
 }
 
+*/
 
+
+//Fibonacci series 
+//F(n)=F(n-1)+F(n-2)
+
+import java.util.Scanner;
+
+public class interview {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter Numbers:");
+        int num=sc.nextInt();
+        int dprev=0;
+        int prev=1;
+        int pres=dprev+prev;
+        for(int i=1;i<num;i++){
+
+            System.out.print(pres+"");
+
+            dprev=prev;
+            prev=pres;
+
+
+        }
+
+        sc.close();
+
+    }
+}

@@ -332,18 +332,15 @@ public class interview {
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter Numbers:");
         int num=sc.nextInt();
-        int dprev=0;
-        int prev=1;
-        int pres=dprev+prev;
-        System.out.print(dprev+" ");
-         System.out.print(prev+" ");
+        int first=0;
+        int second=1;
         for(int i=1;i<=num;i++){
 
-            System.out.print(pres+" ");
+            System.out.print(first+" ");
 
-            dprev=prev;
-            prev=pres;
-            pres=dprev+prev;
+          int next=first+second;
+          first=second;
+          second=next;
 
 
         }

@@ -342,6 +342,7 @@ public class interview {
 
             dprev=prev;
             prev=i;
+            pres=dprev+prev;
 
 
         }

@@ -32,7 +32,3 @@ public class search2darray {
     }
     
 }
-//hi
-//HELLO
-//HI
-

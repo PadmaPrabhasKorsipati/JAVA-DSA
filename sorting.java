@@ -33,7 +33,7 @@ public class sorting {
 
             }
 
-            if(!swapped==true){
+            if(!swapped){
 
                 break;
             }

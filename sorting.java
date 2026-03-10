@@ -1,10 +1,10 @@
 
-/* 
+
 
 //Bubble Sort
 //Bubble Sort is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are in the wrong order. 
 //Time Complexity: O(n2)
-Auxiliary Space: O(1)
+//Auxiliary Space: O(1)
 import java.util.Scanner;
 
 public class sorting {
@@ -23,15 +23,24 @@ public class sorting {
             
         }
          for (int i = 0; i < n - 1; i++) {
-        for(int j=0;j<n-1;j++){
+         boolean swapped=false;
+        for(int j=0;j<n-1-i;j++){
             if(arr[j]>arr[j+1]){
                 sort=arr[j+1];
                 arr[j+1]=arr[j];
                 arr[j]=sort;
+                swapped=true;
 
             }
+
+            if(!swapped==true){
+
+                break;
+            }
+            
    }
 }
+
 
 System.out.println("Sorted Array:");
 
@@ -45,7 +54,6 @@ sc.close();
     
 }
 
-*/
 
 
 /* 

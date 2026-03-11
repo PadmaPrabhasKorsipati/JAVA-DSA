@@ -1,5 +1,5 @@
 
-
+/* 
 
 //Bubble Sort
 //Bubble Sort is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are in the wrong order. 
@@ -54,9 +54,9 @@ sc.close();
     
 }
 
+*/
 
 
-/* 
 //Selection sort
 //The selection sort algorithm sorts an array by repeatedly finding the minimum element (considering ascending order) from the unsorted part and putting it at the beginning.
 //Time Complexity:  O(n2)
@@ -76,22 +76,20 @@ public class sorting {
 
         }
 
-        for(int i=0;i<n;i++){
+        for(int i=0;i<n-1;i++){
             int min=i;
             for(int j=i+1;j<n;j++){
-                if(arr[j]<arr[min]){
-                    min=j;
-
-                }
-
-                int temp=arr[i];
-                arr[i]=arr[min];
-                arr[min]=temp;
+            if(arr[j]<arr[min]){
+                min=j;
 
             }
+
         }
 
-        System.out.println("Sorted Array:");
+        int temp=arr[i];
+        arr[i]=arr[min];
+        arr[min]=temp;
+        }
 
 for(int i=0;i<n;i++){
     System.out.print(arr[i]+" ");
@@ -103,7 +101,7 @@ sc.close();
     }
 }
 
-*/
+
 
 
 /*

@@ -61,7 +61,7 @@ sc.close();
 //The selection sort algorithm sorts an array by repeatedly finding the minimum element (considering ascending order) from the unsorted part and putting it at the beginning.
 //Time Complexity:  O(n2)
 //Auxiliary Space: O(1)
-
+/* 
 import java.util.Scanner;
 
 public class sorting {
@@ -103,8 +103,10 @@ sc.close();
 
 
 
+*/
 
-/*
+    
+
 
 //Insertion sort
 //Insertion sort is a simple sorting algorithm that works by iteratively inserting each element of an unsorted list into its correct position in a sorted portion of the list. It is like sorting playing cards in your hands. You split the cards into two groups: the sorted cards and the unsorted cards. Then, you pick a card from the unsorted group and put it in the right place in the sorted group.
@@ -125,35 +127,37 @@ public class sorting {
 
         }
 
-        for(int i=1;i<n;i++){
-            temp=arr[i];
-            int j=i-1;
+        for(int i=1;i<arr.length-2;i++){
+            for(int j=i+1;j>0;j--){
+                if(arr[j]<arr[j-1]){
+                    temp=arr[j];
+                    arr[j]=arr[j-1];
+                    arr[j-1]=temp;
+                }
+                else{
+                    break;
 
-            while(j>=0 && arr[j]>temp){
-                arr[j+1]=arr[j];
-                j--;
+                }
 
             }
-
-            arr[j+1]=temp;
-            }
-
-
-            System.out.println("After Swapping:");
-        for(int i=0;i<n;i++){
-            System.out.print(arr[i]+" ");
-
         }
 
-     sc.close();
+        for(int i=0;i<arr.length;i++){
+            System.out.println(arr[i]+" ");
+        }
+
+        sc.close();
         
         }
+
+    
+
 
         
     }     
 
 
- */
+
 
  
         

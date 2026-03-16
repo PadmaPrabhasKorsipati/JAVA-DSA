@@ -146,8 +146,7 @@ public class sorting {
             System.out.println(arr[i]+" ");
         }
 
-        sc.close();
-        
+       sc.close();
         }
 
     

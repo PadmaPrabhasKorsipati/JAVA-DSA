@@ -210,8 +210,8 @@ public class practice {
 
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-
-        int num=0;
+        
+        int num=sc.nextInt();
         int remainder=0;
         int armstrong=0;
         int count=0;

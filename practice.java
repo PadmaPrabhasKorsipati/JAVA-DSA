@@ -197,4 +197,52 @@ public class practice {
 
  */
 
+//armstrong number
+
+
+
+import java.util.*;
+
+/**
+ * practice
+ */
+public class practice {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+
+        int num=0;
+        int remainder=0;
+        int armstrong=0;
+        int count=0;
+        int original=num;
+
+        while(num>0){
+            count+=1;
+            num/=10;
+            
+        }
+
+        num=original;
+
+
+        while(num>0){
+        
+            remainder=num%10;
+            armstrong+=Math.pow(remainder,count);
+            num/=10;
+
+        }
+
+        if(original==armstrong){
+            System.out.println("The given number is a armstrong number.");
+        }
+        else{
+            System.out.println("The given number is not a armstrong number.");
+
+        }
+
+        sc.close();
+    }
+}
 

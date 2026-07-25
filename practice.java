@@ -143,8 +143,58 @@ public class practice {
     }
 }
 
+
+
 */
 
 
-//Fibonacci Series 
+
+//Magic Number 
+
+
+/* 
+
+import java.util.*;
+public class practice {
+    public static void main(String[] args) {
+     Scanner sc=new Scanner(System.in);
+     int num=sc.nextInt();
+     
+     int original=0;
+     int remainder=0;
+     
+     while(true){
+
+        
+         
+         if(num==1){
+             System.out.println("The given number is a magic number.");
+             break;
+         }
+         else if(num<10){
+             System.out.println("The given number is not a magic number.");
+             break;
+         }
+         
+         int sum=0;
+
+
+          while (num>0){
+             remainder=num%10;
+             sum+=remainder;
+             num/=10;
+         }
+         
+         num=sum;
+        
+         
+     }
+     
+     sc.close();
+     
+    }
+}
+
+ */
+
 

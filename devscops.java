@@ -34,7 +34,7 @@ public class devscops {
                     
                 }
             }
-            System.out.println(arr2[i]+"occured "+count+" times");
+            System.out.println(arr2[i]+" occured "+count+" times");
             
         }
         sc.close();

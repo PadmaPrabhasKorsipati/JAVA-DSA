@@ -56,7 +56,9 @@ public class devscops {
     
         int[] arr={1,2,3};
 
-        System.out.println(Arrays.toString(arr));
+        for(int num:arr){
+            System.out.println(num);
+        }
 
         
     }

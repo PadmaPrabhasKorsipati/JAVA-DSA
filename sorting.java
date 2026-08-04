@@ -27,7 +27,7 @@ public class sorting {
 
         for(int i=0;i<arr.length;i++){
             int temp=0;
-            for(int j=i;j<arr.length-1;j++){
+            for(int j=0;j<arr.length-1;j++){
                 if(arr[j]>arr[j+1]){
                     temp=arr[j+1];
                     arr[j+1]=arr[j];

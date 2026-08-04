@@ -100,7 +100,7 @@ public class search {
             while(start<=end){
                 int mid=start + (end-start)/2;
 
-                if(mid==target){
+                if(arr[mid]==target){
                     return mid;
 
                 }

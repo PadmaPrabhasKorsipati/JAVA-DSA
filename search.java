@@ -1,88 +1,147 @@
+ //Linear Search
 
-//Linear Search
-// it has the worst time complexity
-/* 
-import java.util.Scanner;
+//import java.util.*;
 
-public class search {
-    public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int[] arr={2,56,45,89,23};
-        System.out.print("Enter the Element to Search:");
-        int target=sc.nextInt();
-        int count=0;
-        int search=0;
-        for(int i=0;i<arr.length;i++){
-            if(arr[i]==target){
-                count+=1;
-                search=i;
-                break;
-            }
-           
-        }
-
-        if(count==1){
-            System.out.println("Element found at index of:"+search);
-        }
-
-         else{
-                System.out.println("Element not found in the given array.");
-            }
-
-        sc.close();
-
-    
-
-    }
-}
-*/
-
-//Binary Search
-/* 
-import java.util.Scanner;
-
-public class search {
+/**
+ * search
+ */
+/* public class search {
 
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-        int[] arr={1,2,3,4,5,6,7};
-        System.out.print("Enter the Element to search:");
-        int target=sc.nextInt();
-        int s=0;
-        int e=arr.length-1;
+
+        int n=sc.nextInt();
+        
+        int[] arr=new int[n];
+
+        for(int i=0;i<n;i++){
+            arr[i]=sc.nextInt();
+
+        }
         int index=-1;
-        while(s<=e){
-            int mid=s+((e-s)/2);
 
-            if(arr[mid]==target){
-                index=mid;
-                break;
-            }
-            else if(arr[mid]>target){
-                e=mid-1;
-            }
-            else{
-                s=mid+1;
-            }
+        int target=sc.nextInt();
 
+        for(int i=0;i<n;i++){
+            if(arr[i]==target){
+                index=i;
+
+            }
         }
 
         if(index!=-1){
-            System.out.println("The Element found at index:"+index);
+            System.out.println("Target is found at the index:"+index);
+
         }
+
         else{
-            System.out.println("The Element not found int  the given array");
+            System.out.println("Target is not found in the given array.");
         }
 
         sc.close();
 
 
     }
+}
+ 
+
+ */
 
 
+
+//Binary Search
+
+
+import java.util.*;
+
+/**
+ * search
+ */
+public class search {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+
+        int n=sc.nextInt();
+        
+        int[] arr=new int[n];
+
+        for(int i=0;i<n;i++){
+            arr[i]=sc.nextInt();
+
+        }
+
+        int target=sc.nextInt();
+
+        int index=binarySearch(arr, target);
+
+
+        if(index!=-1){
+            System.out.println("The target is found at the index of:"+index);
+        }
+
+
+        else{
+            System.out.println("The target is not found in the given array.");
+        }
+
+
+        sc.close();
+
+
+
+    }
+
+        static int binarySearch(int[] arr,int target){
+
+            int start=0;
+            int end=arr.length-1;
+        
+
+            while(start<=end){
+                int mid=start + (end-start)/2;
+
+                if(mid==target){
+                    return mid;
+
+                }
+
+                else if(target>arr[mid]){
+                    start=mid+1;
+                }
+
+                else{
+
+                    end=mid-1;
+
+                }
+
+            }
+
+            return -1;
+
+
+        
+    }
+
+    
 }
 
-*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

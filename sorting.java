@@ -18,7 +18,7 @@ public class sorting {
 
         }
 
-        BubbleSort(arr);
+       System.out.println(BubbleSort(arr)); 
 
         sc.close();
     }

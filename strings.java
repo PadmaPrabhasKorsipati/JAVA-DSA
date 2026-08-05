@@ -70,4 +70,18 @@ public class strings {
 
 */
 
+/**
+ * strings
+ */
 
+public class strings {
+
+    public static void main(String[] args) {
+        int[] arr={34,45,32,12,1};
+
+        for(int num : arr){
+            System.out.println(num);
+        }
+        
+    }
+}

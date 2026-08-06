@@ -53,7 +53,7 @@ public class devscops {
 /**
  * devscops
  */
-import java.util.*;
+/* import java.util.*;
 public class devscops {
 
     public static void main(String[] args) {
@@ -71,5 +71,25 @@ public class devscops {
         list.remove(2);
 
         System.out.println(list);
+    }
+ */
+
+
+
+import java.util.*;
+
+
+public class devscops {
+
+    public static void main(String[] args) {
+        
+
+        ArrayList<ArrayList<Integer>> list=new ArrayList<>();
+
+        for(int i=0;i<3;i++){
+            list.add(new ArrayList<>());
+        }
+
+        
     }
 }

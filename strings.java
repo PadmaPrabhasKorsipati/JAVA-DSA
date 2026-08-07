@@ -100,7 +100,8 @@ public class strings {
 
         int x=s;
 
-        System.out.println(x);
+
+        System.out.println(10+20+"java");
      
 
 

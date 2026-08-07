@@ -165,6 +165,7 @@ public class sorting {
 /**
  * sorting
  */
+
 import java.util.*;
 public class sorting {
 
@@ -189,22 +190,22 @@ public class sorting {
 
     static String CyclicSort(int[] arr){
 
-        for(int i=0;i<arr.length-1;i++){
+        int i=0;
 
-            if(arr[i]==i-1){
+        while(i<arr.length){
 
-            }
-            else{
+            int correct=arr[i]-1;
 
+            if(arr[i]!=arr[correct]){
                 int temp=arr[i];
+                arr[i]=arr[correct];
+                arr[correct]=temp;
 
-                arr[i]=arr[i-1];
-
-                arr[i-1]=temp;
-
-                
             }
-            
+
+            else{
+                i++;
+            }
         }
 
         return Arrays.toString(arr);

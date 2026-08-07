@@ -95,8 +95,9 @@ import java.util.*;
 public class strings {
 
     public static void main(String[] args) {
-      String name=null;
+     float num=12.342323;
 
-      System.out.println(name);
+     System.out.println(num);
+
     }
 }

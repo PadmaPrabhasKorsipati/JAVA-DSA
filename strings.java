@@ -97,10 +97,9 @@ public class strings {
     public static void main(String[] args) {
      
 
-     String n = "100";
+    int n=100;
 
-int s =Integer.parseInt(n);
-
+    char s=(char)n;
 System.out.println(s);
 
     }

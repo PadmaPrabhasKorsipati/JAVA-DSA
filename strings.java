@@ -97,9 +97,9 @@ public class strings {
     public static void main(String[] args) {
      
 
-     int n = 100;
+     String n = "100";
 
-String s = String.valueOf(n);
+int s =Integer.parseInt(n);
 
 System.out.println(s);
 

@@ -97,7 +97,7 @@ public class strings {
     public static void main(String[] args) {
      float num=12.342323f;
 
-     System.out.printf("The formated string is:%.2f."+num);
+     System.out.printf("The formated string is:%.2f.",num);
 
     }
 }

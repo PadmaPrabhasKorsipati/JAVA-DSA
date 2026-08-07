@@ -95,12 +95,14 @@ import java.util.*;
 public class strings {
 
     public static void main(String[] args) {
+
+        char s='s';
+
+        int x=s;
+
+        System.out.println(x);
      
 
-    int n=100;
-
-    char s=(char)n;
-System.out.println(s);
 
     }
 }

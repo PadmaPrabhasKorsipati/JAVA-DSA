@@ -97,7 +97,11 @@ public class strings {
     public static void main(String[] args) {
      
 
-     System.out.println((int)('a'+43));
+     int n = 100;
+
+String s = String.valueOf(n);
+
+System.out.println(s);
 
     }
 }

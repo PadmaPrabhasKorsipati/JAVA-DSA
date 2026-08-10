@@ -246,7 +246,7 @@ public class practice {
 
  */
 
-import java.util.*;
+/* import java.util.*;
 public class practice {
 
     public static void main(String[] args) {
@@ -280,5 +280,71 @@ public class practice {
         sc.close();
 
 
+    }
+} */
+
+
+
+/**
+ * practice
+ */
+/* public class practice {
+
+    public static void main(String[] args) {
+        int n=5;
+
+        int binary=0;
+
+        int place=1;
+
+        while(n>0){
+
+            int remainder=n%2;
+
+            binary=binary+remainder*place;
+
+            place*=10;
+
+            n=n/2;
+
+        }
+
+        System.out.println("the binary:"+binary);
+    }
+} */
+
+import java.util.Scanner;
+
+public class practice {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter a hexadecimal number: ");
+        String hex = sc.next().toUpperCase();
+
+        int decimal = 0;
+        int power = 1;
+
+        for (int i = hex.length() - 1; i >= 0; i--) {
+
+            char ch = hex.charAt(i);
+
+            int digit;
+
+            if (ch >= '0' && ch <= '9') {
+                digit = ch - '0';
+            } else {
+                digit = ch - 'A' + 10;
+            }
+
+            decimal = decimal + digit * power;
+
+            power = power * 16;
+        }
+
+        System.out.println("Decimal = " + decimal);
+
+        sc.close();
     }
 }

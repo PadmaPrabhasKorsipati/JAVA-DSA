@@ -148,7 +148,15 @@ public class functions {
 public class functions {
 
     public static void main(String[] args) {
+
+        for(int i=0;i<5;i++){
+            Return();
+        }
         
+    }
+
+    static void Return(){
+        System.out.println("Hello world");
     }
 }
 

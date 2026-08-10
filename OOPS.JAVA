@@ -18,7 +18,7 @@ public class oops {
 
         student1.roll=123;
         student1.name="Prabhas";
-        student1.marks=90.3f;
+        
 
         System.out.println(student1.roll);
         System.out.println(student1.name);

@@ -46,7 +46,7 @@ import java.util.Scanner;
 
             int c=(a>b) ? a:b;
 
-            for(int i=0;i<=c;i++){
+            for(int i=1;i<=c;i++){
                 if(a%i==0 && b%i==0){
                     gcd=i;
                 }

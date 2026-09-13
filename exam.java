@@ -1,5 +1,5 @@
 //fibonacci
-
+/* 
 import java.util.Scanner;
 
 public class exam {
@@ -26,4 +26,36 @@ public class exam {
         sc.close();
     }
     
-}
+} */
+
+    //gcd,lcm
+
+import java.util.Scanner;
+
+/**
+     * exam
+     */
+    public class exam {
+    
+        public static void main(String[] args) {
+            Scanner sc=new Scanner(System.in);
+
+            int a=sc.nextInt();
+            int b=sc.nextInt();
+            int gcd=0;
+
+            int c=(a>b) ? a:b;
+
+            for(int i=0;i<=c;i++){
+                if(a%i==0 && b%i==0){
+                    gcd=i;
+                }
+            }
+
+            System.out.println("GCD is:"+gcd);
+
+
+
+            
+        }
+    }

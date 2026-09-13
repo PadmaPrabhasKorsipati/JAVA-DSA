@@ -121,7 +121,7 @@ import java.util.Scanner;
 /**
  * exam
  */
-public class exam {
+/* public class exam {
 
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
@@ -135,6 +135,35 @@ public class exam {
 
         catch(Exception e){
             System.out.println("Invalid input");
+        }
+
+
+    }
+} */
+
+
+
+
+/**
+ * exam
+ */
+public class exam {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+
+        System.out.println("Enter the username:");
+        String s1=sc.nextLine();
+
+        System.out.println("Reenter the username:");
+        String s2=sc.nextLine();
+
+        if(s1.equals(s2)){
+            System.out.println("Username is valid.");
+
+        }
+        else{
+            System.out.println("Username is invalid.");
         }
 
 

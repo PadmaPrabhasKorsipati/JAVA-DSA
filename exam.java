@@ -28,13 +28,12 @@ public class exam {
     
 } */
 
-    //gcd,lcm
+ //gcd,lcm
 
-import java.util.Scanner;
+/* import java.util.Scanner;
 
-/**
-     * exam
-     */
+
+    
     public class exam {
     
         public static void main(String[] args) {
@@ -43,8 +42,9 @@ import java.util.Scanner;
             int a=sc.nextInt();
             int b=sc.nextInt();
             int gcd=0;
-
+   
             int c=(a>b) ? a:b;
+         
 
             for(int i=1;i<=c;i++){
                 if(a%i==0 && b%i==0){
@@ -52,10 +52,39 @@ import java.util.Scanner;
                 }
             }
 
+    
+
             System.out.println("GCD is:"+gcd);
 
 
 
             
         }
+    } */
+
+
+//lcm
+
+import java.util.Scanner;
+
+/**
+ * Innerexam
+ */
+public class exam {
+    public static void main(String[] args) {
+         Scanner sc=new Scanner(System.in);
+
+            int a=sc.nextInt();
+            int b=sc.nextInt();
+            int lcm=(a>b) ?a:b;
+
+            while(lcm % a != 0 || lcm % b != 0){
+                lcm++;
+            }
+    System.out.println(lcm);
+
+        
     }
+
+    
+}

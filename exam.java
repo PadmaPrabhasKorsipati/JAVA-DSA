@@ -13,7 +13,7 @@ public class exam {
 
         for(int i=0;i<n;i++ ){
 
-            System.out.print(p+"");
+            System.out.print(p+" ");
 
 
             p=f+s;

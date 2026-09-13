@@ -175,7 +175,7 @@ import java.util.Scanner;
 /**
  * exam
  */
-public class exam {
+/* public class exam {
 
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
@@ -206,5 +206,32 @@ public class exam {
         for(String name:a){
             System.out.println(name);
         }
+    }
+} */
+
+
+/**
+ * exam
+ */
+public class exam {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+
+        String s=sc.nextLine();
+        int count=0;
+
+        System.out.println("Special Characters:");
+
+        for(int i=0;i<s.length();i++){
+            char c=s.charAt(i);
+
+            if(!Character.isLetterOrDigit(c)&& c!=' '){
+                System.out.print(c+" ");
+                count+=1;
+            }
+        }
+
+        System.out.println("\n Number of special characters:"+count);
     }
 }

@@ -65,12 +65,12 @@ public class exam {
 
 //lcm
 
-import java.util.Scanner;
+/* import java.util.Scanner;
 
 /**
  * Innerexam
  */
-public class exam {
+/* public class exam {
     public static void main(String[] args) {
          Scanner sc=new Scanner(System.in);
 
@@ -87,4 +87,31 @@ public class exam {
     }
 
     
+} */ 
+
+
+
+//reverse word
+
+import java.util.Scanner;
+
+/**
+ * exam
+ */
+public class exam {
+
+    public static void main(String[] args) {
+        Scanner  sc=new Scanner(System.in);
+
+        String s=sc.nextLine();
+
+        String r="";
+
+        for(int i=s.length()-1;i>=0;i--){
+            r+=s.charAt(i);
+
+        }
+
+        System.out.println("Reversed string is:"+r);
+    }
 }

@@ -93,11 +93,8 @@ public class exam {
 
 //reverse word
 
-import java.util.Scanner;
+/* import java.util.Scanner;
 
-/**
- * exam
- */
 public class exam {
 
     public static void main(String[] args) {
@@ -113,5 +110,33 @@ public class exam {
         }
 
         System.out.println("Reversed string is:"+r);
+    }
+} */
+
+
+//string to integer
+
+import java.util.Scanner;
+
+/**
+ * exam
+ */
+public class exam {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+
+        String s=sc.nextLine();
+
+        try{
+            int n=Integer.parseInt(s);
+            System.out.println("output integer is:"+n);
+        }
+
+        catch(Exception e){
+            System.out.println("Invalid input");
+        }
+
+
     }
 }

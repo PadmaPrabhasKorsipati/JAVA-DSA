@@ -147,7 +147,7 @@ import java.util.Scanner;
 /**
  * exam
  */
-public class exam {
+/* public class exam {
 
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
@@ -167,5 +167,44 @@ public class exam {
         }
 
 
+    }
+} */
+
+//sort in alphabetical order
+
+/**
+ * exam
+ */
+public class exam {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        
+        System.out.println("Enter number of names:");
+         int n = sc.nextInt();
+        sc.nextLine();
+
+        String[] a = new String[n];
+
+        for (int i = 0; i < n; i++)
+            a[i] = sc.nextLine();
+
+        System.out.print("Order (A/D): ");
+        char ch = sc.next().charAt(0);
+
+        for(int i=0;i<n-1;i++){
+            for(int j=i+1;j<n;j++){
+                if((ch=='A' && a[i].compareTo(a[j])>0)||(ch=='D' && a[i].compareTo(a[j])<0)){
+                 String temp=a[i];
+                 a[i]=a[j];
+                 a[j]=temp;
+
+                }
+            }
+        }
+
+        for(String name:a){
+            System.out.println(name);
+        }
     }
 }

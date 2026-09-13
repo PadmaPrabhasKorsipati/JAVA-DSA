@@ -209,7 +209,7 @@ import java.util.Scanner;
     }
 } */
 
-
+//print special characters
 /**
  * exam
  */
@@ -236,11 +236,11 @@ import java.util.Scanner;
     }
 } */
 
-
+//no of vowels
     /**
      * exam
      */
-    public class exam {
+   /*  public class exam {
     
         public static void main(String[] args) {
        Scanner sc = new Scanner(System.in);
@@ -263,4 +263,36 @@ import java.util.Scanner;
 
             
         }
+    } */
+
+
+
+import java.util.Scanner;
+
+class VowelConsonant {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        String s = sc.nextLine();
+
+        System.out.print("Consonants: ");
+        for (int i = 0; i < s.length(); i++) {
+            char c = s.charAt(i);
+
+            if (Character.isLetter(c) &&
+                c != 'a' && c != 'e' && c != 'i' && c != 'o' && c != 'u' &&
+                c != 'A' && c != 'E' && c != 'I' && c != 'O' && c != 'U')
+                {
+                System.out.print(c + " ");}
+        }
+
+        System.out.print("\nVowels: ");
+        for (int i = 0; i < s.length(); i++) {
+            char c = s.charAt(i);
+
+            if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u' ||
+                c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U')
+                System.out.print(c + " ");
+        }
     }
+}

@@ -393,11 +393,11 @@ public class exam {
         ArrayList<Integer> c=new ArrayList<Integer>();
 
         for(int i=0;i<n;i++){
-            a.add(i);
+            a.add(sc.nextInt());
         }
 
         for(int j=0;j<m;j++){
-            b.add(j);
+            b.add(sc.nextInt());
         }
       
         int i=0,j=0;

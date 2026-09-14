@@ -457,12 +457,12 @@ public class exam {
 
         Arrays.sort(a);
 
-        double mean=sum/n;
+        double mean=(double) sum/n;
 
         double median=0;
 
         if(n%2==0){
-            median=(a[n/2-1] +a[n/2])/2;
+            median=(a[n/2-1] +a[n/2])/2.0;
         }
         else{
             median=a[n/2];

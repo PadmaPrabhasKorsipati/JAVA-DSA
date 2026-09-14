@@ -425,7 +425,7 @@ public class exam {
         }
 
         for(int k:c){
-            System.out.println(k);
+            System.out.print(k+" ");
         }
 
 

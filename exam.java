@@ -435,11 +435,9 @@ public class exam {
 
 //mean median mode 
 
+/* 
 import java.util.*;
 
-/**
- * Innerexam
- */
 public class exam {
 
     public static void main(String[] args) {
@@ -500,4 +498,107 @@ public class exam {
     }
 
     
+} */
+
+/* import java.util.*;
+
+class CompositeCount {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+        int[] a = new int[n];
+
+        for (int i = 0; i < n; i++)
+            a[i] = sc.nextInt();
+
+        int count = 0;
+
+        for (int i = 0; i < n; i++) {
+            int factors = 0;
+
+            for (int j = 1; j <= a[i]; j++) {
+                if (a[i] % j == 0)
+                    factors++;
+            }
+
+            if (factors > 2)
+                count++;
+        }
+
+        System.out.println("Number of Composite Numbers = " + count);
+    }
+} */
+
+//reverse number using loop 
+
+/* import java.util.Scanner;
+
+class ReverseNumber {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+        int rev = 0;
+
+
+        while(n!=0){
+            int remainder=n%10;
+
+            rev=rev*10 +remainder;
+
+            n=n/10;
+
+        }
+
+        System.out.println("Reversed number:"+rev);
+
+}
+
+} */
+
+
+//convert deciimal to binary and reverse binary to decimal
+
+import java.util.Scanner;
+
+/**
+ * exam
+ */
+public class exam {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);        
+        int n=sc.nextInt();
+
+        int binary=0;
+        int place=1;
+
+        while(n>0){
+            int digit=n%2;
+
+            binary+=binary*place+digit;
+
+            place*=10;
+            n/=2;
+        }
+
+        int reverse=0;
+        while(binary>0){
+            reverse=reverse*10 + binary%10;
+            binary/=10;
+        }
+
+        int decimal=0;
+        int power=1;
+
+        while(reverse>0){
+            decimal+=(decimal%10)*power;
+            power*=2;
+            reverse/=10;
+
+        }
+
+        System.out.println(decimal);
+    }
 }

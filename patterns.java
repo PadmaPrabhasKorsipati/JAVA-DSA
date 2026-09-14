@@ -318,39 +318,49 @@ public class patterns {
     }
 }
 */
+//right triangled angle
 
-//Fibonacci Numbers
+/* import java.util.Scanner;
+
+class RightTriangle {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= i; j++)
+                System.out.print("* ");
+            
+            System.out.println();
+        }
+    }
+} */
+
+//pascal triangle 
 
 import java.util.Scanner;
 
+/**
+ * patterns
+ */
 public class patterns {
 
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-        System.out.print("Enter the number:");
+        System.out.println("Enter no of rows");
         int n=sc.nextInt();
 
-        int a=0;
-        int b=1;
-        int c;
-        int j=2;
+        for(int i=0;i<n;i++){
+            int num=1;
+            for(int j=0;j<=i;j++){
+            
 
-        System.out.print(a+" "+b);
-
-        while(j<=n){
-          c=a+b;
-          System.out.print(" "+c);
-
-          a=b;
-          b=c;
-
-          j++;
-
-
+                System.out.print(num);
+                num=num*(i-j)/(j+1);
+            }
+            System.out.println();
 
         }
-
-        sc.close();
-
     }
 }

@@ -658,6 +658,8 @@ public class exam {
 
             arm+=Math.pow(digit,power);
 
+            n/=10;
+
             
         }
 

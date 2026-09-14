@@ -169,3 +169,43 @@ public class Innertwodarray {
 
  */
 
+//jagged array
+
+import java.util.Scanner;
+
+/**
+ * twodarray
+ */
+public class twodarray {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter no of rows");
+        int rows=sc.nextInt();
+
+        int[][] arr=new int[rows][];
+
+        for(int i=0;i<rows;i++){
+            System.out.println("Enter no of column for "+(i+1)+" row");
+            int cols=sc.nextInt();
+            
+            arr[i]=new int[cols];
+
+            for(int j=0;j<cols;j++){
+                arr[i][j]=sc.nextInt();
+            }
+
+
+        }
+
+        System.out.println("Jagged Array.");
+
+        for(int[] jag:arr){
+            for(int i:jag){
+                System.out.println(i+" ");
+            }
+            System.out.println();
+        }
+
+    }
+}

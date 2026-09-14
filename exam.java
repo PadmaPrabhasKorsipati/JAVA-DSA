@@ -602,7 +602,7 @@ public class exam {
  */
 
 //lcm
-import java.util.*;
+/* import java.util.*;
  public class exam {
     public static void main(String[] args) {
          Scanner sc=new Scanner(System.in);
@@ -622,4 +622,52 @@ import java.util.*;
         
     }
 }
- }
+ } */
+
+
+
+import java.util.*;
+
+/**
+ * exam
+ */
+public class exam {
+
+    public static void main(String[] args) {
+
+        Scanner sc=new Scanner(System.in);
+
+        int n=sc.nextInt();
+
+        int temp=n;
+        int power=0;
+
+        while(n>0){
+    
+            n/=10;
+
+            power++;
+
+        }
+
+        n=temp;
+        int arm=0;
+
+        while(n>0){
+            int digit=n%10;
+
+            arm+=Math.pow(digit,power);
+
+            
+        }
+
+        if(arm==temp){
+            System.out.println("The given number is armstrong number ");
+        }
+
+        else{
+            System.out.println("The given number is not a armstrong number");
+        }
+       
+    }
+}

@@ -676,7 +676,7 @@ import java.util.*;
 
 
 
-import java.util.*;
+/* import java.util.*;
 
 public class exam {
     public static void main(String[] args) {
@@ -704,6 +704,32 @@ public class exam {
            }
 
             System.out.println(a[i] + " | " + count);
+        }
+    }
+}
+
+
+ */
+
+//square root of a perfect square
+
+/**
+ * exam
+ */
+public class exam {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        for(int i=1;i<n;i++){
+            if(n/i==i){
+
+                System.out.println("The square root is:"+i);
+
+            }
+            else{
+                System.out.println("It is not square root.");
+            }
         }
     }
 }

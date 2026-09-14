@@ -602,3 +602,4 @@ public class exam {
         System.out.println(decimal);
     }
 }
+

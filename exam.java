@@ -617,9 +617,9 @@ import java.util.*;
                     break;
                 }
                 max++;
-            }
-    System.out.println(max);
+            
 
         
     }
 }
+ }

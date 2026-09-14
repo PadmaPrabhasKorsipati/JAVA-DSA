@@ -560,11 +560,7 @@ class ReverseNumber {
 
 //convert deciimal to binary and reverse binary to decimal
 
-import java.util.Scanner;
-
-/**
- * exam
- */
+/* import java.util.Scanner;
 public class exam {
 
     public static void main(String[] args) {
@@ -603,3 +599,27 @@ public class exam {
     }
 }
 
+ */
+
+//lcm
+import java.util.*;
+ public class exam {
+    public static void main(String[] args) {
+         Scanner sc=new Scanner(System.in);
+
+            int a=sc.nextInt();
+            int b=sc.nextInt();
+            int max=(a>b) ?a:b;
+
+            while(true){
+                if(max%a==0 && max%b==0){
+                    System.out.println(max);
+                    break;
+                }
+                max++;
+            }
+    System.out.println(max);
+
+        
+    }
+}

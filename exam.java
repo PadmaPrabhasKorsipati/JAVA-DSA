@@ -378,7 +378,7 @@ class RemoveVowels {
 /**
  * exam
  */
-import java.util.*;
+/* import java.util.*;
 public class exam {
 
     public static void main(String[] args) {
@@ -431,4 +431,73 @@ public class exam {
 
 
     }
+} */
+
+//mean median mode 
+
+import java.util.*;
+
+/**
+ * Innerexam
+ */
+public class exam {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter no of elements:");
+        int n = sc.nextInt();
+        int[] a = new int[n];
+
+        int sum = 0;
+
+        for (int i = 0; i < n; i++) {
+            a[i] = sc.nextInt();
+            sum += a[i];
+        }
+
+        Arrays.sort(a);
+
+        double mean=sum/n;
+
+        double median=0;
+
+        if(n%2==0){
+            median=(a[n/2-1] +a[n/2])/2;
+        }
+        else{
+            median=a[n/2];
+        }
+
+        int mode=a[0];
+        int max=0;
+        
+
+        for(int i=0;i<n;i++){
+            int count=1;
+
+            for(int j=i+1;j<n;j++){
+                if(a[i]==a[j]){
+                    count++;
+                }
+            }
+
+            if(max<count){
+                max=count;
+                mode=a[i];
+            }
+        }
+
+         System.out.println("Mean = " + mean);
+        System.out.println("Median = " + median);
+        System.out.println("Mode = " + mode);
+ 
+
+        
+
+        
+
+        
+    }
+
+    
 }

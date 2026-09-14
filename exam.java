@@ -577,7 +577,7 @@ public class exam {
         while(n>0){
             int digit=n%2;
 
-            binary+=binary*place+digit;
+            binary+=digit*place;
 
             place*=10;
             n/=2;
@@ -593,7 +593,7 @@ public class exam {
         int power=1;
 
         while(reverse>0){
-            decimal+=(decimal%10)*power;
+            decimal+=(reverse%10)*power;
             power*=2;
             reverse/=10;
 

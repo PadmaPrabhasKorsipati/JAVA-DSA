@@ -202,7 +202,7 @@ public class twodarray {
 
         for(int[] jag:arr){
             for(int i:jag){
-                System.out.println(i+" ");
+                System.out.print(i+" ");
             }
             System.out.println();
         }

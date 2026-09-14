@@ -415,6 +415,14 @@ public class exam {
 
             }
         }
+        while(i<n){
+            c.add(a.get(i));
+            i++;
+        }
+        while(j<m){
+            c.add(b.get(j));
+            j++;
+        }
 
         for(int k:c){
             System.out.println(k);

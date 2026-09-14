@@ -421,10 +421,10 @@ class InvertedPyramid {
         int n = sc.nextInt();
 
         for(int i=n;i>=1;i--){
-            for(int j=n;j>n-i;j--){
+            for(int j=1;j<=n-i;j++){
                 System.err.print(" ");
             }
-            for(int k=1;k<n;k++){
+            for(int k=1;k<2*i-1;k++){
                 System.out.print("*");
             }
 

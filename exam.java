@@ -716,7 +716,7 @@ public class exam {
 /**
  * exam
  */
-public class exam {
+/* public class exam {
 
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
@@ -737,4 +737,20 @@ public class exam {
     System.out.println("There is no square root.");
     }
 }
+} */
+
+
+import java.util.Scanner;
+
+public class exam {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+
+        while (n > 1 && n % 3 == 0)
+            n /= 3;
+
+        System.out.println(n == 1);
+    }
 }

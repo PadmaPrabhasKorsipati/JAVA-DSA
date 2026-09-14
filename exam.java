@@ -721,15 +721,20 @@ public class exam {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         int n=sc.nextInt();
+        int sq_rt=0;
         for(int i=1;i<n;i++){
             if(n/i==i){
-
-                System.out.println("The square root is:"+i);
-
-            }
-            else{
-                System.out.println("It is not square root.");
-            }
+                sq_rt=i;  
         }
     }
+
+    if(sq_rt!=0){
+        System.out.println("The square root is:"+sq_rt);
+
+    }
+
+    else{
+    System.out.println("There is no square root.");
+    }
+}
 }

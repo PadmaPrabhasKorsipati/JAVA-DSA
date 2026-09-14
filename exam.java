@@ -116,8 +116,6 @@ public class exam {
 
 //string to integer
 
-import java.util.Scanner;
-
 /**
  * exam
  */
@@ -265,9 +263,9 @@ import java.util.Scanner;
         }
     } */
 
+// print vowels and consonants
 
-
-import java.util.Scanner;
+/* import java.util.Scanner;
 
 class VowelConsonant {
     public static void main(String[] args) {
@@ -294,5 +292,135 @@ class VowelConsonant {
                 c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U')
                 System.out.print(c + " ");
         }
+    }
+} */
+
+
+//check character is present or not
+/* import java.util.Scanner;
+
+class SearchCharacter {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        String s = sc.nextLine();
+        char ch = sc.next().charAt(0);
+
+        int index = -1;
+
+        for (int i = 0; i < s.length(); i++) {
+            if (s.charAt(i) == ch) {
+                index = i;
+                break;
+            }
+        }
+
+        if (index != -1)
+            System.out.println(ch + " is found in string at index: " + index);
+        else
+            System.out.println(ch + " is not found in string");
+    }
+} */
+
+
+//Arrange letters in alphabetical reverse order
+
+/* import java.util.Scanner;
+
+class ReverseAlphabetical {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        String s = sc.nextLine();
+        char[] a = s.toCharArray();
+
+        for (int i = 0; i < a.length - 1; i++) {
+            for (int j = i + 1; j < a.length; j++) {
+                if (a[i] < a[j]) {
+                    char temp = a[i];
+                    a[i] = a[j];
+                    a[j] = temp;
+                }
+            }
+        }
+
+        for (char c : a)
+            System.out.print(c + " ");
+    }
+} */
+
+//remove vowels from a string 
+/* import java.util.Scanner;
+
+class RemoveVowels {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        String s = sc.nextLine();
+        String r = "";
+
+        for (int i = 0; i < s.length(); i++) {
+            char c = s.charAt(i);
+
+            if (c != 'a' && c != 'e' && c != 'i' && c != 'o' && c != 'u' &&
+                c != 'A' && c != 'E' && c != 'I' && c != 'O' && c != 'U')
+                r += c;
+        }
+
+        System.out.println("The string without vowels is: " + r);
+    }
+} */
+
+
+
+//merge two sorted arrays using arraylist
+
+/**
+ * exam
+ */
+import java.util.*;
+public class exam {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter no of elements for 1st array:");
+        int n=sc.nextInt();
+        System.out.println("Enter no of elements for 2nd array:");
+        int m=sc.nextInt();
+
+        ArrayList<Integer> a=new ArrayList<Integer>();
+        ArrayList<Integer> b=new ArrayList<Integer>();
+        ArrayList<Integer> c=new ArrayList<Integer>();
+
+        for(int i=0;i<n;i++){
+            a.add(i);
+        }
+
+        for(int j=0;j<m;j++){
+            b.add(j);
+        }
+      
+        int i=0,j=0;
+        while(i<n&&j<m){
+            
+            if(a.get(i)<=b.get(j)){
+
+                c.add(a.get(i));
+                i++;
+            
+            }
+            else{
+                c.add(b.get(j));
+                j++;
+
+            }
+        }
+
+        for(int k:c){
+            System.out.println(k);
+        }
+
+
+
     }
 }

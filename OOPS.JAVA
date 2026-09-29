@@ -10,7 +10,9 @@
 /**
  * oops
  */
-public class oops {
+
+
+/* public class oops {
 
     public static void main(String[] args) {
 
@@ -35,4 +37,22 @@ class Student{
     int roll;
     String name;
     float marks=85;
+} */
+
+public class oops {
+public static void main(String[] args) {
+    
+}
+    
+}
+
+
+abstract class Parent {
+String name;
+
+    
+}
+
+class Son extends Parent{
+    
 }

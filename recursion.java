@@ -12,12 +12,11 @@ public class recursion {
 
         for(int i=0;i<n;i++){
 
-            System.out.println(fib(n)+" ");
+            System.out.println(fib(i)+" ");
 
         }
 
         sc.close();
-
 
     }
 

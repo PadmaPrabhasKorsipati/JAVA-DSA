@@ -16,6 +16,8 @@ public class recursion {
 
         }
 
+        sc.close();
+
 
     }
 

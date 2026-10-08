@@ -1,7 +1,7 @@
-public class bitwise {
+/* public class bitwise {
 
     public static void main(String[] args) {
-       int[] arr={2,3,4,4,3,7,2,8};
+       int[] arr={2,3,4,4,3,7,2};
 
        System.out.println(ans(arr));
         
@@ -19,4 +19,28 @@ public class bitwise {
 
 
     
+}
+ */
+
+import java.util.Scanner;
+
+public class bitwise {
+
+public static void main(String[] args) {
+    Scanner sc=new Scanner(System.in);
+
+    int n=sc.nextInt();
+
+    String num="";
+
+
+    while(n>0){
+        int remainder=n%2;
+        num+=remainder;
+        n/=2;
+
+    }
+ System.out.println(num);
+
+}    
 }

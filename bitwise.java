@@ -53,7 +53,9 @@ public static void main(String[] args) {
 
     }
 
- System.out.println(rev.charAt(target-1));
+   int l=rev.length();
+
+ System.out.println(rev.charAt(l-target));
 
 }    
 }

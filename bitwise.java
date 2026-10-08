@@ -40,7 +40,19 @@ public static void main(String[] args) {
         n/=2;
 
     }
- System.out.println(num);
+
+    String rev="";
+
+
+    for(int i=num.length()-1;i>=0;i--){
+
+        rev+=num.charAt(i);
+
+
+    }
+
+
+ System.out.println(rev);
 
 }    
 }

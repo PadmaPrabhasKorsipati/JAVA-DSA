@@ -1,7 +1,7 @@
 public class bitwise {
 
     public static void main(String[] args) {
-       int[] arr={2,3,4,4,3,7,2};
+       int[] arr={2,3,4,4,3,7,2,8};
 
        System.out.println(ans(arr));
         

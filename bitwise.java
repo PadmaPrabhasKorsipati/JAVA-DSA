@@ -22,40 +22,24 @@
 }
  */
 
-import java.util.Scanner;
+//ith bit of the given number
+
+
+import java.util.*;
 
 public class bitwise {
 
-public static void main(String[] args) {
-    Scanner sc=new Scanner(System.in);
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
 
-    int n=sc.nextInt();
+        int n = sc.nextInt();
+        int i = sc.nextInt();
 
-    int target=sc.nextInt();
+        int bit = 1 << (i - 1);
+        int num = n & bit;
 
-    String num="";
+        System.out.println(num != 0 ? 1 : 0);
 
-
-    while(n>0){
-        int remainder=n%2;
-        num+=remainder;
-        n/=2;
-
+        sc.close();
     }
-
-    String rev="";
-
-
-    for(int i=num.length()-1;i>=0;i--){
-
-        rev+=num.charAt(i);
-
-
-    }
-
-   int l=rev.length();
-
- System.out.println(rev.charAt(l-target));
-
-}    
 }

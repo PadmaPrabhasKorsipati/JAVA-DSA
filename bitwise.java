@@ -87,9 +87,9 @@ public class bitwise {
         while(n>0){
             int pos=n & 1;
 
-            ans+=power;
+             n=n>>1;
 
-            n=n>>1;
+            ans+=pos*power;
 
             power*=5;
 

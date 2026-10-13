@@ -24,7 +24,7 @@
 
 //ith bit of the given number
 
-
+/* 
 import java.util.*;
 
 public class bitwise {
@@ -41,5 +41,65 @@ public class bitwise {
         System.out.println(num != 0 ? 1 : 0);
 
         sc.close();
+    }
+}
+ */
+//right most set bit
+
+/* 
+import java.util.Scanner;
+
+public class bitwise{
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+
+        int result = n & (-n);
+
+        System.out.println(result);
+
+        sc.close();
+    }
+}
+ */
+
+//nth magic number
+
+import java.util.Scanner;
+
+/**
+ * bitwise
+ */
+public class bitwise {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+
+        int n=sc.nextInt();
+
+        int power=5;
+
+        int ans=0;
+
+
+        while(n>0){
+            int pos=n & 1;
+
+            ans+=power;
+
+            n=n>>1;
+
+            power*=5;
+
+            
+        }
+
+        System.out.println(ans);
+        
+
+
+
     }
 }

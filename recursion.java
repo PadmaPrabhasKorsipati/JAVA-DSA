@@ -38,7 +38,7 @@ public class recursion {
 
 //binary searh using recursion
 
-import java.util.Scanner;
+/* import java.util.Scanner;
 
 public class recursion {
 
@@ -104,4 +104,36 @@ public class recursion {
 
     }
     
+} */
+
+
+// RETURN n to 1
+
+import java.util.Scanner;
+
+/**
+ * recursion
+ */
+public class recursion {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+
+        int n=sc.nextInt();
+
+        num(n);
+
+
+    }
+
+
+    static void num(int n){
+        if(n==0){
+            return ;
+        }
+
+        System.out.println(n);
+
+        num(n-1);
+    }
 }

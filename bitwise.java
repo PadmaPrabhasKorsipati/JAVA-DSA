@@ -65,13 +65,12 @@ public class bitwise{
 }
  */
 
-//nth magic number
+
+
+/* //nth magic number
 
 import java.util.Scanner;
 
-/**
- * bitwise
- */
 public class bitwise {
 
     public static void main(String[] args) {
@@ -99,5 +98,49 @@ public class bitwise {
 
 
 
+    }
+} */
+
+
+
+//prime number
+
+import java.util.Scanner;
+
+/**
+ * bitwise
+ */
+public class bitwise {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+
+        int n=sc.nextInt();
+
+
+        int c=2;
+
+        boolean p=true;
+
+
+        while(c*c<=n){
+            if(n%c==0){
+                System.out.println("It is not prime");
+                p=false;
+                break;
+
+              
+            }
+
+            c++;
+        }
+
+        if(p)
+
+            System.out.println("It is prime");
+
+
+
+    
     }
 }

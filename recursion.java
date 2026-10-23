@@ -179,7 +179,7 @@ public class recursion {
 /**
  * recursion
  */
-import java.util.*;
+/* import java.util.*;
 public class recursion {
 
     public static void main(String[] args) {
@@ -203,4 +203,32 @@ System.out.println(sum(n));
 
     }
     
+} */
+
+    //reverse a number 
+
+import java.util.Scanner;
+
+/**
+ * recursion
+ */
+public class recursion {
+
+    public static void main(String[] args) {
+
+         Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+
+        System.out.println(rev(n));
+        
+    }
+
+
+    static int rev(int n){
+        if(n%10==n){
+            return n;
+        }
+
+        return (n%10)*10 + rev(n/=10);
+    }
 }

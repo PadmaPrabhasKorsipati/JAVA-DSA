@@ -352,21 +352,45 @@ public class interview {
 
 */
 
+//palindrome 
 
-//Armstrong Number
-
-/* */
-
-import java.util.Scanner;
-
+import java.util.*;
 public class interview {
 
     public static void main(String[] args) {
 
         Scanner sc=new Scanner(System.in);
 
-        
+        int n=sc.nextInt();
+
+        System.out.println(pal(n));
         
     }
-}
 
+    static boolean pal(int n){
+
+        if (n<0)
+        return false;
+        int divisor=1;
+        while(n/divisor>=10){
+            divisor*=10;
+        }
+
+        while(n>0){
+            int leading=n/divisor;
+
+            int trailing=n%10;
+
+            if(leading!=trailing){
+                return false;
+            }
+
+            n=(n%divisor)/10;
+
+            divisor/=100;
+        }
+
+        return true;
+
+    }
+}

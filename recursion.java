@@ -196,7 +196,9 @@ System.out.println(sum(n));
         }
        int rev=n%10;
 
-       return rev + sum(n/=10);
+       n/=10;
+
+       return rev + sum(n);
 
 
     }

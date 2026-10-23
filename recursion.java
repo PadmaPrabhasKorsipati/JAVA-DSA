@@ -219,16 +219,24 @@ public class recursion {
          Scanner sc=new Scanner(System.in);
         int n=sc.nextInt();
 
-        System.out.println(rev(n));
+        
         
     }
 
+   static  int  sum=0;
+    static  void rev(int n){
 
-    static int rev(int n){
         if(n==0){
-            return 0;
+            return ;
         }
 
-        return (n%10)*10 + rev(n/=10);
+        int rev=n%10;
+
+        sum=sum*10 + rev;
+
+        n/=10;
+
+        rev(n);
+        
     }
 }

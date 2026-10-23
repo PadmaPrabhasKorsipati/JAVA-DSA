@@ -109,11 +109,9 @@ public class recursion {
 
 // RETURN n to 1
 
-import java.util.Scanner;
+/* import java.util.Scanner;
 
-/**
- * recursion
- */
+
 public class recursion {
 
     public static void main(String[] args) {
@@ -136,4 +134,68 @@ public class recursion {
 
         num(n-1);
     }
+}
+ */
+
+
+//factorial of n
+/* import java.util.*;
+public class recursion {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+
+        int n=sc.nextInt();
+
+
+        System.out.println(fact(n));
+
+
+
+    }
+
+  
+   
+    static int fact(int n){
+
+        if(n<=1){
+            return 1;
+        }
+
+    
+
+        return n*fact(n-1);
+    
+
+
+    
+    }
+} */
+
+
+//sum of digits 
+
+
+/**
+ * recursion
+ */
+import java.util.*;
+public class recursion {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+
+System.out.println(sum(n));
+    }
+
+    static int sum(int n){
+       int rev=n%10;
+
+
+       return rev + sum(n/=10);
+
+
+    }
+    
 }

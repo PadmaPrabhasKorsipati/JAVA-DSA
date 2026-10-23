@@ -190,8 +190,11 @@ System.out.println(sum(n));
     }
 
     static int sum(int n){
-       int rev=n%10;
 
+        if(n==0){
+            return 0;
+        }
+       int rev=n%10;
 
        return rev + sum(n/=10);
 

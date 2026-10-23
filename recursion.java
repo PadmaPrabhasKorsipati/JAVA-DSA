@@ -218,8 +218,8 @@ public class recursion {
 
          Scanner sc=new Scanner(System.in);
         int n=sc.nextInt();
-
-        
+        rev(n);
+        System.out.println(sum);
         
     }
 

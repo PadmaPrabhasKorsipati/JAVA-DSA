@@ -191,14 +191,14 @@ System.out.println(sum(n));
 
     static int sum(int n){
 
-        if(n==0){
-            return 0;
+        if(n<=1){
+            return 1;
         }
        int rev=n%10;
 
        n/=10;
 
-       return rev + sum(n);
+       return rev*sum(n);
 
 
     }

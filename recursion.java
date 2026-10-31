@@ -604,7 +604,7 @@ public class recursion {
 
         mergesort(arr);
 
-        System.out.println(arr);
+        System.out.println(Arrays.toString(arr));
         
     }
 

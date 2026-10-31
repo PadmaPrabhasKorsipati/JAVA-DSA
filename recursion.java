@@ -175,6 +175,8 @@ public class recursion {
 
 //sum of digits 
 
+import java.util.ArrayList;
+import java.util.Arrays;
 
 /**
  * recursion
@@ -205,13 +207,10 @@ System.out.println(sum(n));
     
 } */
 
-    //reverse a number 
+ //reverse a number 
 
-import java.util.Scanner;
+/* import java.util.Scanner;
 
-/**
- * recursion
- */
 public class recursion {
 
     public static void main(String[] args) {
@@ -237,6 +236,466 @@ public class recursion {
         n/=10;
 
         rev(n);
+        
+    }
+} */
+
+
+
+//palindrome
+
+/* import java.util.*;
+public class recursion {
+
+    public static void main(String[] args) {
+
+         Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+         
+        if(n<0){
+            System.out.println(false);
+            return;
+        }
+
+        int divisor=1;
+
+        while(n/divisor>=10){
+            divisor*=10;
+        }
+
+        System.out.println(pal(n, divisor));
+        
+    }
+
+   static boolean pal(int n,int divisor){
+
+    if (n==0) return true;
+
+    int leading=n/divisor;
+
+    int trailing=n%10;
+
+    if(leading!=trailing){
+        return false;
+    }
+
+    return pal((n%divisor)/10,divisor/=100);
+
+
+
+
+   }
+
+
+} */
+
+//count zeros
+/* import java.util.*;
+public class recursion {
+
+    public static void main(String[] args) {
+
+         Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+
+
+        System.out.println(count(n,0));
+
+
+         
+    }
+
+    static int count(int n,int sum){
+         
+       
+        if(n==0){
+            return sum;
+        }
+
+        int rev=n%10;
+       if(rev==0)
+        return count(n/10,sum+1);
+
+       else
+
+        return count(n/10, sum);
+
+    }
+
+} */
+
+
+
+
+//Arrays
+
+
+//check array is sorted or not
+
+
+/* public class recursion {
+
+    public static void main(String[] args) {
+
+        int arr[]={1,2,3,5,6};
+
+        System.out.println(check(arr, 0));
+
+
+        
+    }
+
+    static boolean check(int[] arr,int i){
+
+        if(i>=arr.length-1){
+            return true;
+        }
+
+        if(arr[i]>arr[i+1] ){
+            return false;
+        }
+
+
+        return check(arr, i+1);
+
+
+    }
+} */
+
+
+
+//linear search
+
+
+/*  public class recursion {
+
+    public static void main(String[] args) {
+
+        int arr[]={1,3,2,3,5,6};
+        
+        System.out.println(indexall(arr, 3,0 ));
+
+
+        
+    }
+
+
+    static ArrayList<Integer> indexall(int[] arr,int target,int i){
+        ArrayList<Integer> list =new ArrayList<>(); 
+        if(i>=arr.length){
+            return list;
+        }
+
+        if(arr[i]== target)
+           list.add(i);
+        
+
+        ArrayList<Integer> ansBelow=indexall(arr, target, i+1);
+
+        list.addAll(ansBelow);
+
+        return list;
+
+
+        
+
+
+    }
+} */
+
+
+//binary search
+
+
+/**
+ * recursion
+ */
+/* public class recursion {
+
+    public static void main(String[] args) {
+
+        int arr[]={1,2,3,4,5,6};
+        
+        System.out.println(bsearch(arr, 4, 0, arr.length-1));
+        
+    }
+
+
+    static int bsearch(int[] arr,int target,int s,int e){
+
+        int mid=s + (e-s)/2;
+        
+         if(s>e){
+
+            return -1;
+
+        }
+       
+        if(arr[mid]==target){
+            return mid;
+        }
+
+        else if(arr[mid]>target){
+            return bsearch(arr, target, s, mid-1);
+        }
+
+        else{
+            return bsearch(arr, target, mid+1, e);
+        }
+
+        
+    }
+} */
+
+
+
+//normal triangle
+
+/**
+ * recursion
+ */
+/* public class recursion {
+
+    public static void main(String[] args) {
+
+        print(0, 0, 4);
+        
+    }
+
+    static void print(int r,int c,int n){
+
+        if(r==n-1){
+            return;
+        }
+
+        if(r<c){
+
+            System.out.print('*');
+             print(r, c+1, n);
+        }
+
+        else{
+            System.err.println();
+
+            print(r+1, 0, n);
+        }
+    }
+} */
+
+
+//bubble sort
+
+
+/**
+ * recursion
+ */
+/* public class recursion {
+
+    public static void main(String[] args) {
+        int[] arr={3,2,7,9,5};
+
+        System.out.println(Arrays.toString(bubblesort(arr, arr.length-1,0,false)));
+
+
+    }
+
+
+    static int[] bubblesort(int[] arr,int i,int j,boolean swapped){
+
+    if(i==0){
+        return arr;
+    }
+
+    if(j<i){
+        if(arr[j]>arr[j+1]){
+            int temp=arr[j];
+
+            arr[j]=arr[j+1];
+
+            arr[j+1]=temp;
+            swapped=true;
+        }
+        return bubblesort(arr, i, j+1,swapped);
+    }
+
+    else{
+
+        if(!swapped){
+            return arr;
+        }
+        return bubblesort(arr, i-1, 0,false);
+    }
+
+    
+
+
+
+
+    }
+}
+
+
+
+ */
+
+
+//selective sort
+
+
+/**
+ * recursion
+ */
+/* public class recursion {
+
+    public static void main(String[] args) {
+
+        int[] arr={47,25,8,49,23,30,39};
+
+        System.out.println(Arrays.toString(selecsort(arr, 0, 0,0)));
+        
+    }
+
+    static int[] selecsort(int[] arr,int i,int j,int minindex){
+
+        if(i==arr.length-1){
+
+            return arr;
+        }
+
+        if(j<arr.length){
+            if(arr[j]<arr[minindex]){
+                minindex=j;
+            }
+
+            return selecsort(arr, i, j+1, minindex);
+        }
+
+        else{
+
+            int temp=arr[i];
+
+            arr[i]=arr[minindex];
+
+            arr[minindex]=temp;
+
+
+            return selecsort(arr, i+1, j+2, i+1);
+
+
+
+
+        }
+
+    }
+}
+
+ */
+
+//MERGE SORT
+
+/**
+ * recursion
+ */
+public class recursion {
+
+    public static void main(String[] args) {
+
+        int[] arr={3,2,9,5,1,8,7};
+
+        mergesort(arr);
+
+        System.out.println(arr);
+        
+    }
+
+
+    private static void mergesort(int[] arr){
+
+        int length=arr.length;
+
+        if(length<=1){
+            return;
+        }
+
+        int mid=length/2;
+
+        int[] leftarray=new int[mid];
+
+        int[] rightarray=new int[length-mid];
+
+        int i=0;
+        int j=0;
+
+        for(;i<length;i++){
+
+            if(i<mid){
+                leftarray[i]=arr[i];
+            }
+
+            else{
+                rightarray[j]=arr[i];
+                j++;
+            }
+
+        }
+
+
+        mergesort(leftarray);
+
+        mergesort(rightarray);
+
+
+        merge(leftarray,rightarray,arr);
+
+
+
+    }
+
+
+    private static void merge(int[]leftarray,int[] rightarray,int[] arr) {
+
+    
+        int l=arr.length/2;
+
+        int r=arr.length -l;
+
+        int i=0,j=0,k=0;
+
+        while (i<1 && j<r) {
+
+            if(leftarray[i]<rightarray[j]){
+                arr[k]=leftarray[i];
+                i++;
+            }
+
+            else{
+                arr[k]=rightarray[j];
+
+                j++;
+            }
+
+            k++;
+            
+        }
+
+
+        while(i<l){
+            arr[k]=leftarray[i];
+            i++;
+            k++;
+        }
+
+        while (j<r) {
+            arr[k]=rightarray[j];
+
+            j++;
+            k++;
+
+            
+        }
+
+
+
         
     }
 }

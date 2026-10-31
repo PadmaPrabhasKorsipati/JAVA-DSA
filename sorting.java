@@ -1,10 +1,7 @@
 
 //Bubble Sort
 
-/**
- * sorting
- */
-/* import java.util.*;
+ /* import java.util.*;
 public class sorting {
  public static void main(String[] args) {
     Scanner sc=new Scanner(System.in);
@@ -18,44 +15,53 @@ public class sorting {
 
         }
 
-       System.out.println(BubbleSort(arr)); 
+       System.out.println(BubbleSort(arr,arr.length)); 
 
         sc.close();
     }
 
-    static String BubbleSort(int[] arr){
+    static String BubbleSort(int[] arr,int n){
 
-        for(int i=0;i<arr.length-1;i++){
+        for(int i=0;i<n-1;i++){
             boolean swapped=false;
-            for(int j=0;j<arr.length-1-i;j++){
+
+            for(int j=0;j<n-1-i;j++){
+
                 if(arr[j]>arr[j+1]){
-                   int  temp=arr[j+1];
-                    arr[j+1]=arr[j];
-                    arr[j]=temp;
+                    int temp=arr[j];
+
+                    arr[j]=arr[j+1];
+
+                    arr[j+1]=temp;
+
                     swapped=true;
+                }
+
+              
+
+
+            }
+
+              if(swapped==false){
+                    break;
 
                 }
 
-
-            }
-            if(!swapped){
-                break;
-            }
         }
 
+
         return Arrays.toString(arr);
+
+       
     }
 
     
-} */
-
+} 
+ */
 
 //selection sort
 
-/**
- * sorting
- */
-/* import java.util.*;
+ import java.util.*;
 public class sorting {
 
     public static void main(String[] args) {
@@ -79,18 +85,20 @@ public class sorting {
    static String Selectionsort(int[] arr){
 
     for(int i=0;i<arr.length-1;i++){
-        int min=i;
+
+        int min=arr[i];
+
+        int index=i;
+
         for(int j=i+1;j<arr.length;j++){
-            if(arr[min]>arr[j]){
-                min=j;
+            if(arr[j]<min){
+                min=arr[j];
+                index=j;
             }
-
         }
+        arr[index]=arr[i];
 
-        int temp=arr[min];
-        arr[min]=arr[i];
-        arr[i]=temp;
-
+        arr[i]=min;
     }
 
     return Arrays.toString(arr);
@@ -98,9 +106,8 @@ public class sorting {
 
    }
 
+}
 
-    
-} */
 
 
 
@@ -166,7 +173,7 @@ public class sorting {
  * sorting
  */
 
-import java.util.*;
+/* import java.util.*;
 public class sorting {
 
     public static void main(String[] args) {
@@ -217,4 +224,4 @@ public class sorting {
 
 
 
-}
+} */

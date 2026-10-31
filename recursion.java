@@ -661,7 +661,7 @@ public class recursion {
 
         int i=0,j=0,k=0;
 
-        while (i<1 && j<r) {
+        while (i<l && j<r) {
 
             if(leftarray[i]<rightarray[j]){
                 arr[k]=leftarray[i];

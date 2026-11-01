@@ -785,6 +785,8 @@ public class recursion {
         int[] arr={6,5,12,10,9,1};
 
         mergesort(arr);
+
+        System.out.println(Arrays.toString(arr));
         
     }
 

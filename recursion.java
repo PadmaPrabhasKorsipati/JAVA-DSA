@@ -743,7 +743,7 @@ public class recursion {
         int i=start-1;
 
         for(int j=start;j<=end-1;j++){
-            if(arr[i]<arr[pivot]){
+            if(arr[j]<arr[pivot]){
                 i++;
                 int temp=arr[i];
                 arr[i]=arr[j];

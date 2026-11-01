@@ -707,7 +707,7 @@ public class recursion {
 /**
  * recursion
  */
-public class recursion {
+/* public class recursion {
 
     public static void main(String[] args) {
 
@@ -764,5 +764,113 @@ public class recursion {
 
        
     }
+
+} */
+
+
+
+
+
+
+//merge sort
+
+
+/**
+ * recursion
+ */
+public class recursion {
+
+    public static void main(String[] args) {
+
+        int[] arr={6,5,12,10,9,1};
+
+        mergesort(arr);
+        
+    }
+
+    private static void mergesort(int[] arr) {
+        
+        int length=arr.length;
+
+        if(length<=1){
+            return;
+        }
+
+        int mid=arr.length/2;
+
+        int[] leftarr=new int[mid];
+
+        int[] rightarr=new int[length-mid];
+
+        int i=0;
+
+        int j=0;
+
+        for(;i<length;i++){
+            if(i<mid){
+                leftarr[i]=arr[i];
+            }
+
+            else{
+                rightarr[j]=arr[i];
+
+                j++;
+            }
+        }
+
+
+        mergesort(leftarr);
+
+        mergesort(rightarr);
+
+        merge(leftarr,rightarr,arr);
+        
+    }
+
+    private static void merge(int[] leftarr, int[] rightarr, int[] arr) {
+
+        int leftsize=arr.length/2;
+
+        int rightsize=arr.length-leftsize;
+
+        int l=0,r=0,k=0;
+
+        while(l<leftsize && r<rightsize){
+
+            if(leftarr[l]<rightarr[r]){
+                arr[k]=leftarr[l];
+                l++;
+            }
+
+            else{
+                arr[k]=rightarr[r];
+                r++;
+            }
+
+            k++;
+        }
+
+        while (l<leftsize) {
+
+            arr[k]=leftarr[l];
+
+            l++;
+            k++;
+        }
+
+        while(r<rightsize){
+            arr[k]=rightarr[r];
+
+            r++;
+            k++;
+        }
+
+
+
+
+       
+    }
+
+
 
 }

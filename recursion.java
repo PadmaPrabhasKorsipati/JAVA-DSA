@@ -596,7 +596,7 @@ public class recursion {
 /**
  * recursion
  */
-public class recursion {
+/* public class recursion {
 
     public static void main(String[] args) {
 
@@ -698,4 +698,71 @@ public class recursion {
 
         
     }
+} */
+
+
+//quick sort
+
+
+/**
+ * recursion
+ */
+public class recursion {
+
+    public static void main(String[] args) {
+
+        int[] arr={2,8,5,3,9,4,5};
+
+        quicksort(arr,0,arr.length-1);
+
+        System.out.println(Arrays.toString(arr));
+        
+    }
+
+    private static void quicksort(int[] arr, int start, int end) {
+
+        if(start>=end){
+            return;
+        }
+
+        int pivot=partition(arr,start,end);
+
+        quicksort(arr, start, pivot-1);
+
+        quicksort(arr, pivot+1,end);
+
+        
+
+    
+    }
+
+    private static int partition(int[] arr, int start, int end) {
+
+        int pivot=end;
+
+        int i=start-1;
+
+        for(int j=start;j<=end-1;j++){
+            if(arr[i]<arr[pivot]){
+                i++;
+                int temp=arr[i];
+                arr[i]=arr[j];
+                arr[j]=temp;
+            }
+
+        }
+
+        i++;
+
+        int temp=arr[i];
+        arr[i]=arr[pivot];
+         arr[pivot]=temp;
+
+
+        return i;
+
+
+       
+    }
+
 }

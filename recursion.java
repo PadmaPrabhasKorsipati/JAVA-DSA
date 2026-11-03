@@ -970,7 +970,9 @@ public class recursion {
 
         int n=5;
         
-        System.out.println(fib(5));
+        for(int i=0;i<n;i++){
+            System.out.print(fib(i)+" ");
+        }
 
         
     }

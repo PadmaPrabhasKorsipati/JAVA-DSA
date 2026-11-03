@@ -354,7 +354,7 @@ public class interview {
 
 //palindrome 
 
-import java.util.*;
+/* import java.util.*;
 public class interview {
 
     public static void main(String[] args) {
@@ -392,5 +392,43 @@ public class interview {
 
         return true;
 
+    }
+} */
+
+
+
+
+
+
+
+//fibonacci series
+
+
+/**
+ * interview
+ */
+public class interview {
+
+    public static void main(String[] args) {
+        int n=5;
+
+        int a=0;
+
+        int b=1;
+
+    
+
+        for(int i=0;i<n;i++){
+            System.out.print(a+" ");
+
+          int c=a+b;
+
+            a=b;
+
+            b=c;
+
+
+
+        }
     }
 }

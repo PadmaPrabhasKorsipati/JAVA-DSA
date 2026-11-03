@@ -407,7 +407,7 @@ public class interview {
 /**
  * interview
  */
-public class interview {
+/* public class interview {
 
     public static void main(String[] args) {
         int n=5;
@@ -430,5 +430,43 @@ public class interview {
 
 
         }
+    }
+} */
+
+
+
+//fibonacci sum
+
+
+/**
+ * interview
+ */
+public class interview {
+
+    public static void main(String[] args) {
+
+        int n=5;
+
+        int sum=0;
+
+        int a=0;
+
+        int b=1;
+
+
+        for(int i=0;i<n;i++){
+            sum+=a;
+
+            int c=a+b;
+            
+            a=b;
+
+            b=c;
+            
+        }
+
+
+
+        
     }
 }

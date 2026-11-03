@@ -462,9 +462,11 @@ public class interview {
             a=b;
 
             b=c;
-            
+
         }
 
+
+        System.out.println(sum);
 
 
         

@@ -174,9 +174,6 @@ public class recursion {
 
 //sum of digits 
 
-import java.util.ArrayList;
-import java.util.Arrays;
-
 /**
  * recursion
  */

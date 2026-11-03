@@ -885,7 +885,7 @@ public class recursion {
 /**
  * recursion
  */
-public class recursion {
+/* public class recursion {
 
     public static void main(String[] args) {
         int[] arr={6,5,12,10,9,1};
@@ -942,4 +942,54 @@ public class recursion {
 
 
 
+} */
+
+
+
+
+//remove letter 
+
+
+/**
+ * recursion
+ */
+public class recursion {
+
+    public static void main(String[] args) {
+
+        String word="bacaadd";
+
+        skip("",word);
+
+       
+        
+    }
+
+    private static void skip(String p, String unp) {
+
+        if(unp.isEmpty()){
+            System.out.println(p);
+            return;
+        }
+
+        char ch=unp.charAt(0);
+
+        if(Character.toLowerCase(ch)=='a'){
+
+            skip(p,unp.substring(1));
+
+        
+        }
+
+        else{
+
+            skip(p+ch,unp.substring(1));
+        }
+
+    
+        
+    }
+
+
+    
 }

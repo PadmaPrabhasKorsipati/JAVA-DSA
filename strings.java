@@ -88,22 +88,50 @@ public class strings {
 } */
 
 
-/**
- * strings
- */
-import java.util.*;
+
+
+  
+
+
+
+import java.util.Scanner;
+
 public class strings {
-
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
 
-        char s='s';
+        String str = sc.nextLine();
+        String target = sc.nextLine();
+        String ans = "";
 
-        int x=s;
+       for(int i=0;i<str.length();){
+          boolean match=true;
+        if(i+target.length()<=str.length()){
 
+            for(int j=0;j<target.length();j++){
+                if(str.charAt(i+j)!=target.charAt(j)){
+                    match=false;
+                    break;
 
-        System.out.println(10+20+"java");
-     
+                }
+            }
+            
+        }
 
+        else{
+            match =false;
+        }
 
+        if(match){
+            i+=target.length();
+        }
+
+        else{
+            ans+=str.charAt(i);
+            i++;
+        }
+       }
+
+       System.out.println(ans);
     }
 }

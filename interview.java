@@ -403,6 +403,7 @@ public class interview {
 
 //fibonacci series
 
+import java.util.Scanner;
 
 /**
  * interview
@@ -437,10 +438,7 @@ public class interview {
 
 //fibonacci sum
 
-
-/**
- * interview
- */
+/* 
 public class interview {
 
     public static void main(String[] args) {
@@ -471,4 +469,174 @@ public class interview {
 
         
     }
+} */
+
+
+
+
+//Take integer inputs till the user enters 0 and print the sum of all numbers (HINT: while loop)
+
+
+/* public class interview {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+
+        int n=sc.nextInt();
+
+        int sum=0;
+
+        while(n!=0){
+            sum+=n;
+
+            n=sc.nextInt();
+
+        }
+
+        System.out.println(sum);
+    }
+
+    
+} */
+
+
+
+//armstrong number
+
+/* import java.util.*;
+
+public class interview {
+
+    public static void main(String[] args) {
+
+        Scanner sc=new Scanner(System.in);
+
+        int n=sc.nextInt();
+
+        int arm=0;
+
+        int dup=n;
+
+        int count=0;
+
+        while(n>0){
+            count+=1;
+            n/=10;
+        }
+
+        n=dup;
+
+        while(n>0){
+            int rem=n%10;
+
+            arm+=Math.pow(rem,count);
+
+            n/=10;
+
+        }
+
+        n=dup;
+
+        if(arm==n){
+            System.out.println("It is a armstrong number.");
+
+
+        }
+
+        else{
+            System.out.println("It is not a armstrong number.");
+        }
+        
+    }
+} */
+
+
+
+//reverse a  string
+
+
+/* public class interview {
+
+    public static void main(String[] args) {
+
+        Scanner sc=new Scanner(System.in);
+
+        String word=sc.nextLine();
+
+        String rev="";
+
+        for(int i=word.length()-1;i>=0;i--){
+            rev+=word.charAt(i);
+
+        }
+
+        System.out.println(rev);
+        
+    }
+
+    
+} */
+
+//number palindrome or not
+
+/**
+ * interview
+ */
+/* public class interview {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+
+        int n=sc.nextInt();
+
+        int pal=0;
+
+        int dup=n;
+
+        while (dup>0) {
+            int rem=dup%10;
+
+            pal=pal*10+rem;
+
+            dup/=10;
+            
+        }
+
+        if(n==pal)
+            System.out.println("palindrome");
+
+        else
+            System.out.println("Not a palindrome");
+    }
+} */
+
+
+//hcf of two numbers
+
+public class interview {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+
+        int a=sc.nextInt();
+
+        int b=sc.nextInt();
+
+        int hcf=0;
+
+        for(int i=2;i<=((a>b)?a:b);i++){
+
+            if(a%i==0 && b%i==0){
+
+                hcf=i;
+
+            }
+
+
+        }
+
+        System.out.println(hcf);
+    }
+
+    
 }

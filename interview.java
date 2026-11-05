@@ -613,7 +613,7 @@ public class interview {
 
 //hcf of two numbers
 
-public class interview {
+/* public class interview {
 
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
@@ -638,5 +638,37 @@ public class interview {
         System.out.println(hcf);
     }
 
+    
+} */
+
+
+//lcm of two numbers
+
+public class interview {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+         int a=sc.nextInt();
+         int b=sc.nextInt();
+
+         int lcm=(a>b) ? a:b;
+
+         while (true) {
+
+            if(lcm%a==0 && lcm%b==0){
+                System.out.println(lcm);
+
+                break;
+            }
+
+            lcm++;
+
+
+            
+         }
+
+        
+    }
+
+   
     
 }

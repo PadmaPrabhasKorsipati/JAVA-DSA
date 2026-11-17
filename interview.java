@@ -719,7 +719,7 @@ public class interview {
     static void prime(int a,int b){
         for(int i=a+1;i<b;i++){
             int c=0;
-            for(int j=2;j<i;j++){
+            for(int j=2;j<i/j;j++){
                 if(i%j==0){
                     c+=1;
                     break;

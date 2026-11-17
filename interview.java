@@ -677,7 +677,7 @@ public class interview {
 
 //vowel or consonant
 
-public class interview {
+/* public class interview {
 
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
@@ -696,4 +696,40 @@ public class interview {
             System.out.println("it is not a alphabet");
         }
     }
+} */
+
+
+//method to print the all prime numbers between two numbers
+
+public class interview {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter first number");
+        int a=sc.nextInt();
+        System.out.println("Enter second number");
+
+        int b=sc.nextInt();
+
+        prime(a, b);
+
+
+    }
+
+    static void prime(int a,int b){
+        for(int i=a+1;i<b;i++){
+            int c=0;
+            for(int j=2;j<i;j++){
+                if(i%j==0){
+                    c+=1;
+                    break;
+                }
+
+            }
+            if(c==0)
+            System.out.print(i+" ");
+        }
+    }
+
+    
 }
